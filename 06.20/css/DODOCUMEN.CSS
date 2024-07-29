@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; 
+box-sizing: border-box;}
+
+ul,li,ol{list-style: none;}
+
+a{text-decoration: none;}
+
+
+.lion1{
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    background: url(../img/lion.jpg)no-repeat;
+    background-size: cover;
+    float: left;
+    border: 2px solid red;
+    position: relative;
+    margin: 200px 0 0 200px;
+}
+
+.lion1 > p {
+    font-size: 50px;
+}
+
+.li_1{
+    position: absolute;
+    top: 50%;
+    animation:li_1 1s forwards;
+}
+.li_2{ 
+    position: absolute;
+    top: 50%;
+    animation:li_2 1s forwards;}
+
+@keyframes li_1 {
+    0%{ left:-100px;}
+    100%{left: 100PX}
+}
+
+@keyframes li_2 {
+    0%{ left:-100px ;}
+}
+
+.lion2{}

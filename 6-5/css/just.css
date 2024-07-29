@@ -1,0 +1,96 @@
+@charset "UTF8";
+*{margin: 0;P: 0;}
+ul,li,ol{list-style: :none;}
+a{text-decoration: none;inherits: ;}
+body{
+    color: #333;
+    background: #fff;
+
+}
+#wrap {
+    width: 1200px;
+    height: 700px;
+    background-color: ;
+    margin: 0 auto;
+}
+
+
+.header{ 
+    height: 100px;
+    background-color: teal;
+}
+.main {
+    height: 500px;
+    background-color:aqua ;
+}
+.footer {
+    height: ;
+
+}
+
+.header{
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+
+.logo{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    float: left;
+}
+.nav { 
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+.main {
+    /*height: 500px;*/
+    /*background-color: aqua;*/
+}
+.slide_img {
+   height: 300px;
+   background-color: red;
+}
+.containner{
+    height: 200px;
+    background-color: burlywood;
+    }
+
+    .containner>div{
+        float :left ;
+        width:calc(100% / 3) ;
+        height: 200px;
+    }
+    .cont1{
+        background-color: burlywood;
+    }
+    .cont2{
+        background-color: orange;
+    }
+    .cont3{
+        background-color: green;
+    }
+    .footer{
+        height: 100px;
+    }
+
+    .footer>div{
+        float: left;
+        height: 100px;
+
+    }
+    .f_logo{
+        width: 200px;
+        background-color: antiquewhite;
+    }
+    .copy{width: 800px;
+            background-color: aquamarine;}
+    .sns{ width: 200px;
+            background-color: aquamarine;}
+
+
+

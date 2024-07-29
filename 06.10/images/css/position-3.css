@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+body {
+    background: #ccc;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap li {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    line-height: 120px;
+}
+
+.fix {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    /* left: calc(50% + 520px); */
+    /* wrap 1000 / 2 = 500 + 20(사이값) */
+    right: calc(50% - 720px)
+        /* wrap 1000 / 2 = 500 + 20(사이값) + 200(width) */
+
+}
+
+
+/* cont01 */
+.cont01 {
+    padding: 20px;
+    background-color: white;
+}
+
+.cont01 ul {}
+
+.cont01 ul li:nth-child(odd) {
+    background-color: red;
+}
+
+.cont01 ul li:nth-child(even) {
+    background: green;
+}
+
+/* cont02 */
+
+.cont02 {
+    border: 1px solid red;
+    padding: 20px;
+    text-align: right;
+}
+
+.cont02 ul {}
+
+.cont02 ul li:nth-child(odd) {
+    background-color: green;
+}
+
+.cont02 ul li:nth-child(even) {
+    background-color: greenyellow;
+}
+
+
+/* cont03 */
+
+.cont03 {
+    /* 높이 600
+패딩50
+배경 */
+    height: 600px;
+    padding: 50px;
+    background-color: white;
+    position: relative;
+}
+
+.cont03 h1 {
+    width: 400px;
+    border: 5px solid purple;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cont03 p {
+    width: 60%;
+    margin: 20px auto 0;
+    text-align: center;
+    line-height: 2;
+    /* border: 1px solid red; */
+}
+
+.cont03 .abs {
+    background-color: hotpink;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+
+}
+
+/* cont04 */
+.cont04 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cont04 ul {}
+
+.cont04 ul li:nth-child(odd) {
+    background-color: tomato;
+}
+
+.cont04 ul li:nth-child(even) {
+    background-color: teal;
+}
+
+
+/* cont05 */
+.cont05 {
+    padding: 20px;
+    text-align: right;
+}
+
+.cont05 ul {}
+
+.cont05 ul li:nth-child(odd) {
+    background-color: pink;
+}
+
+.cont05 ul li:nth-child(even) {
+    background-color: hotpink;
+}
+
+/* cont06 */
+.cont06 {
+    background: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: sticky;
+    left: calc(50% - 500px);
+    top: 200px;
+}
+
+body {
+    height: 3000px;
+}
+
+.top {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+}
+
+.top a {
+    /* background-color: black; */
+    display: block;
+    height: 100px;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>배경 이미지</title>
+  <style>
+    body{
+      /* background-color: rgb(225, 225, 225);
+      background-color: rgba(225, 0,0, 0.5);
+      background-color: #ff00005a; */
+      background-image: url('images/bg5.jpg');
+      /* background-repeat: repeat; /* default */
+      /* background-repeat: no-repeat;
+      background-repeat: repeat-x;  가로방향으로만 반복 */
+      /* background-repeat: repeat-Y;  세로방향으로만 반복 */ 
+      background-repeat: no-repeat , repeat;
+      background-position: top center;
+
+      /* background-position: left center right top center bottom;
+      background-position: 200px 50px; 가로방향 세로방향
+      background-position: 50% 30%; 가로방향 세로방향 */
+      background-size: 100%;
+      /* 백분율은 부모 width가 기준이다 하나만 입력하면 가로방향 기준 */
+      background-size: 100% 50%;
+      /* 두개 입력하면 가로방향 세로방향 (이미지가 찌그러짐) */
+      /* background-size: 500px 300px; */
+      background-size: contain;
+      /* 이미지 그림 파일이 짤리면 안됨 이미지를 다보여 주니까 배경 여백이 보임  */
+      /* background-size: cover; */
+      /* 배경이 중심 이미지가 잘리더라도 배경을 꽉채운다 */
+      /* background-attachment: fixed; */
+
+      background: url(images/bg5.jpg) left top no-repeat;
+      background-size: cover;
+      
+
+    }
+    h1 {
+      
+      margin-top:150px;   /* 상단 마진 */
+      font-size:80px;  /* 글자 크기 */
+      text-align: center;      /* 가운데 정렬 */
+    }
+  </style>
+</head>
+<body>
+  <h1>Do it!</h1>
+ </body>
+</html>

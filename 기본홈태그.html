@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag 연습</title>
+</head>
+<body>
+    <form action="test.php">
+        <label for="name">이름 : </label>
+        <input type="text" name="name"placeholder="이름을 입력하세요"><size="30"> <br>
+    <!-- <value"이름 type="text"->텍스트 입력하기 -->
+    
+        <label for ="pass"> 비밀번호 : </label>
+        <input type ="password" placeholder="8글자 이상 *? /제외 name" name="pass"> <br>
+
+        <label for="birth">생년월일 : </label>
+        <input type="date" name="birth"> <br>
+
+        <label for="">성별 : </label>
+        <input type="radio" name="gender"value="male"checked>남  
+        <input type="radio" name="gender"value="female">여
+
+        <ol>
+            <li>당신의 취미는? <br>
+                <input type="checkbox"name="alcohol"value="h1">등산 <br>
+                <input type="checkbox"name="alcohol"value="h2">여행 <br>
+                <input type="checkbox"name="alcohol"value="h3">낚시 <br>
+                <input type="checkbox"name="alcohol"value="h4">영화감상 <br>
+            </li>
+            <li>당신의 주량은? <br>
+                <input type="radio"name="hobb"value="a1">못한다<br>
+                <input type="radio"name="hobb"value="a2">한병미만 <br>
+                <input type="radio"name="hobb"value="a3">2병미만 <br>
+                <input type="radio"name="hobb"value="a4">1병미만 <br> 
+            </li>             
+            <li>당신의 좋아하는 과일은? <br> 
+                <select name="fruit"id="">
+                    <option value="f1"name="fruit">바나나</option><br>
+                    <option value="f2"name="fruit">딸기</option><br>
+                    <option value="f3"name="fruit">포토</option><br>
+                    <option value="f4"name="fruit">토마토</option><br>
+                </select>
+            </li>
+            <li>당신의 관심있는 언어는? <br>
+                <select name="object"id=""size="5" multiple>
+                    <option value="o1"name="object">html</option>
+                    <option value="o2"name="object">css</option>
+                    <option value="o3"name="object">java</option>
+                    <option value="o4"name="object">xml</option>
+                    <option value="o5"name="object">jquaery</option>
+                    <option value="o6"name="object">html</option>
+                    <option value="o7"name="object">html</option>
+                    <option value="o8"name="object">html</option>
+                </select>
+             </li>
+            <li>자기소개 <br>
+                <textarea name="" id=""cols="50px"rows="5"placeholder="자기소개를 10글자 이상으로 입력하세요."></textarea>
+            </li>
+
+        </ol>
+
+        <input type="submit" value="완료">
+        <input type="reset" value="취소"> <br>  
+            
+        <input type="file">   <br>
+        <input type="color">   <br>
+        <input type="email">   <br>
+        <input type="tel">   <br>
+        <input type="search">   <br>
+        <input type="url">   <br>
+        <input type="number">   <br>
+        <input type="range">   <br>
+        <input type="time">   <br>
+        <input type="week">   <br>
+        <input type="button">   <br>
+        
+
+
+
+</body>
+</html>

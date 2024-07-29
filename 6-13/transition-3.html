@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션 연습</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+            ul,li{ list-style: none;}
+            a{text-decoration: none;color: inherit;}
+        .head{background-color: aliceblue;
+             margin: 0 auto;
+             text-align: center;
+             padding: 20px 0;
+        }
+        .box{ 
+            /* position: relative; */
+            /* width: 100px; */
+            border: 1px solid red;
+            text-align:center;}
+        .box li{
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            line-height: 300px;
+            background-color:darkblue;
+            border-radius: 30px;
+            margin: 0 15px;
+            position: relative;
+            overflow: hidden;
+            /* hidden을 걸어주면 밖에 있는게 아예 안보임! */
+            /* position: absolute; */
+            
+        }
+        .box li a{
+            display: block;
+            height: 100%;
+            color: white;
+        }
+        .box li a h1{
+            font-size: 40px;
+            text-transform: uppercase;
+            border: 1px solid yellow;
+            width: 180px;
+            height:;
+            position: absolute;
+            left: 0; top:0;
+            background-color: blueviolet;
+            /* margin-left: -90px; */
+            transform: translate(-150% , 0);
+            /* transform 에서 숫자를 사용해서  */
+            /* margin-top: 10px; */
+            transition: all 0.1s;
+            opacity: 0;
+        }
+        .box li a:hover h1{
+            /* top: 50px; */
+            /* margin-left: 10px 0 0 ; */
+            left: 90%;
+            opacity: 1;
+        }
+        
+        .box2{
+            height: 150px;
+            line-height: 150px;
+            border:2px solid saddlebrown;
+            text-align: center;
+        }
+        .box-2{
+            text-align: center;
+        }
+        .box-2 li{
+            display: inline-block;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 30px;
+            /* overflow: hidden; */
+        }
+        .box-2 li a{
+            display: block;
+            position: relative;
+
+            width: 200px;
+            height: 200px;
+        }
+        .box-2 li a h1 {
+            font-size: 40px;
+            border: 1px solid yellow;
+            width: 100px;
+            height:100px;
+            position: absolute;
+            left: 10px; top:210px;
+            background-color: blueviolet;
+            transition: all 0.1s;
+            opacity: 1;
+        }
+        .box-2 a:hover h1{
+            /* transform: translate(10px , 0); */
+            background-color: bisque;
+            /* left: 90%; */
+            top: 0;
+            opacity:1;
+        }
+    
+ /*  부모로 부터 -100%
+  top / left /right/bottom 
+  부모의 높이 모니터 안쪽으로 들어오게 함 
+  상자크기가 100% 
+  translate ->부모의 크기 영향x  내크기에 %  */
+    </style>
+
+</head>
+<body>
+      <h1 class="head">트렌지션 연습</h1>
+
+      <ul class="box">
+        <li>
+            <a href="#">
+                <h1>title 1 </h1>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#">
+                <h1>title 2 </h1>
+            </a>
+
+        </li>
+        <li>
+            <a href="#">
+                <h1>title 3 </h1>
+            </a>
+
+        </li>
+
+
+      </ul>
+
+      <ul class="box2"><h1>트렌지션 연습</h1></ul>
+
+      <ul class="box-2">
+        <li>
+            <a href="#">
+                <h1>title 1 </h1>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#">
+                <h1>title 2 </h1>
+            </a>
+
+        </li>
+        <li>
+            <a href="#">
+                <h1>title 3 </h1>
+            </a>
+
+        </li>
+
+
+      </ul>
+</body>
+</html>

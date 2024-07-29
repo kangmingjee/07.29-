@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    color: #444;
+    height: 3000px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#wrap {
+    width: 1000px;
+    /* height: 1000px; */
+    border: 1px red solid;
+    margin: 0 auto;
+    /* margin: 10px 20px 30px 40px;
+            위  오  아  왼
+    margin: 10px 20px 30px ;
+            위 왼오 아
+    margin: 10px 20px ;
+            위아 왼오
+    margin: 10px ;
+            위오아왼 */
+}
+
+.box1 {
+    height: 350px;
+    /* border: 1px solid black; */
+    margin: 20px;
+    /* border-radius: 10px 20px 30px 40px;
+                    왼위  오위  오아  왼아
+    border-radius: 10px 20px 30px ;
+                    왼위  오위왼아   오아
+    border-radius: 10px 20px ;
+                왼위오아  오위왼아
+    border-radius: 10px ;
+                4모퉁이 */
+    border-radius: 30px 0;
+    /* border-radius: 30px 0 30PX 0; */
+
+
+    /* background-color: #d4d3d2;
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 400px 0px;
+    background-size: 800px; */
+
+    background: #d4d3d2 url("../img/1.png") no-repeat 400px 0px/800px;
+
+    padding: 30px;
+}
+
+.box1 h1 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+}
+
+/* .box1 h1 p{}  X*/
+.box1 p {
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+    /* border: 1px salmon solid; */
+    width: 60%;
+    text-align: justify;
+}
+
+.box2 {
+    height: 125px;
+    border: 1px solid red;
+    margin: 0 20px 20px;
+    border-radius: 30px 0;
+    /* background-color: #f00A; */
+
+    /* background-color:rgba(255,0,0,0.5);
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat; */
+    background: rgba(255, 0, 0, 0.5) url("../img/4.png") no-repeat;
+    padding: 30px;
+
+}
+
+.box2 h1 {
+    color: white;
+    /* border: 1px solid blueviolet; */
+    text-align: right;
+    /* margin: 20px ; */
+    /* padding: 20px; */
+}
+
+.box3 {
+    height: 125px;
+    /* background-image: url("../img/02.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat; */
+    background: url("../img/02.jpg") repeat fixed;
+}
+
+.box4 {
+    /* border: 1px solid blue; */
+    margin: 20px 20px 0 20px;
+}
+
+.box4 h1 {
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+.box4 ul {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.box4 ul li {
+    /* border: 1px solid green; */
+    width: calc(100% / 3 - 10px);
+    height: 200px;
+    display: inline-block;
+    background-image: url("../img/03.jpg");
+    background-size: cover;
+    border-radius: 30px 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: red;
+}

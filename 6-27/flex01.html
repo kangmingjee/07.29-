@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        *{margin: 0;padding: 0; box-sizing: border-box;}
+        ul,ol,li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        body{background-color: antiquewhite;}
+     
+            .wrap{
+                width: 600px;
+                height: 400px;
+                border: 1px solid red;
+                margin: 10px auto;
+                display: flex;
+                /* 구조변경은 부모에게 사용한다 */
+                flex-direction: row; /* defalt */
+                /* flex-direction: row-reverse;
+                flex-direction: column;
+                flex-direction: column-reverse; */
+                /* justify-content:flex-start; */
+                 /* default */
+                /* justify-content: flex-end;*/
+                justify-content: space-around;
+                 /*justify-content: space-between;  처음과끝은 붙이고 그가운데 사이로 들어옴  */
+                align-content: stretch;  /*  item 높이가 없을때 기본값 */ 
+                flex-wrap: wrap;
+            }
+            .item{
+                border: 1px solid red;
+                padding: 0 30px;
+                text-align: center;
+                /* height: 150px; */
+                width: 180px;
+            }
+
+            .box {
+            width: 100%;
+            height: 300px;
+            margin: 100px 0;
+            border: 1px solid blue;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            }
+            .box_inner{
+                border: 1px solid black;
+                width: 200px;height: 200px;
+            }
+            .menu{
+                width: 50%;
+                border: 1px solid green;
+                margin: 100px auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .menu li{}
+            .menu li a{
+                display: block;
+                background-color: pink;
+                padding: 5px;
+            }
+            .logo{
+                width: 200px;
+                height: 100px;
+                border: 1px solid red;
+                margin: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .logo a{ 
+                display: block;
+                width: 180px;
+                height: 80px;
+                background-color: aqua;
+            }
+            .header{
+                height: 100px;
+                border: 1px solid sienna;
+                display: flex;
+                justify-content: space-between;
+            }
+            .nav{
+                height: 100px;
+                border: 1px solid red;}
+            .logo_1{
+                border: 1px solid black;
+                height: 50px;
+            }
+
+    </style>
+</head>
+<body>
+        <div class="wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div><!-- wrap -->
+        <div class="box">   
+            <div class="box_inner">box1</div>        
+            <div class="box_inner">box2</div>        
+            <div class="box_inner">box3</div>        
+        </div>
+        <ul class="menu">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+            <li><a href="#">menu04</a></li>
+            <li><a href="#">menu05</a></li>
+        </ul>
+            <h1 class="logo">
+                <a href="#">로고</a>
+            </h1>
+
+            <header class="header">
+                <h1 class="logo_1">로고</h1>
+                <nav class="nav">메뉴</nav>
+            </header><!-- header -->
+</body>
+</html>

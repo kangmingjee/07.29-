@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #f1f1f1;
+    color: #444;
+}
+
+.header{
+    width: 100%;
+}
+
+.h_inner{
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 1.2em;
+    /* border: 1px solid crimson; */
+    width: 200px;
+    line-height: 40px;
+}
+
+.nav{}
+
+.main{
+    display: flex;
+}
+.main > li{
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main > li:hover > a{
+    color: green;
+}
+
+.main > li:hover .sub{
+    background-color: darkgreen;
+}
+
+.sub{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    border-right: 1px dotted #ccc;
+    height: 250px;
+    padding: 20px 5px;
+    display: none;
+    z-index: 50;
+    /* background-color: aqua; */
+}
+
+.sub.sub1{
+    border-left: 1px dotted #ccc;
+}
+
+.sub li{
+
+}
+
+.sub li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sub li a:hover{
+    color: white;
+}
+
+.img_area{
+    position: absolute;
+    width: 100%;
+    background-color: #f7f7f7;
+    left: 0;
+    top: 65px;
+    height: 250px;
+    display: none;
+}
+
+.img_area .icons{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.img_area .icons li{
+    display: none;
+}

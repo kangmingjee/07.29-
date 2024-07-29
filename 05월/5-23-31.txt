@@ -1,0 +1,15 @@
+<font속성></font>
+속성 
+color ="red"
+color='red'
+color='##ff00ff'
+
+
+size = "1" ~size ="7"
+face = "궁서"
+face = "돋움"
+
+
+br은 줄바꿈 / '' ," " 은 똑같은 문구 
+
+p 태그는 한문장으로 끝난다 

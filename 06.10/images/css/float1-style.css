@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Lobster&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 내가 주는width, height에 패딩과 보더가 포함됨; */
+}
+
+ul,li,ol {list-style: none;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Gwendolyn", cursive;
+}
+
+h1{
+    font-family: "Lobster", sans-serif; 
+    margin: 20px 0;
+    text-align: center;
+}
+
+.in_block{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    /* width 
+    80% - 20 - 20 -1 - 1
+    80%안에 패딩과 보더가 포함되어있다
+    box-sizing : border-box 설정을 안하면
+    width 80% + 20 +20 +1 +1
+     */
+     text-align: center;
+}
+
+.in_block li{
+    border:1px solid red ;
+    display: inline-block;
+    width: calc(100% / 5 - 10px) ;    
+}
+
+.in_block li a{
+    background-color: tan;
+    display: block;
+    padding: 5px 0;
+}
+
+.in_block li a:hover{
+    background-color: aqua;
+}
+
+.float{
+    width: 80%;    
+    border: 1px solid blue;
+    margin: 0 auto;
+    padding:20px ;
+    overflow: hidden;
+}
+
+.float li{
+    border:1px solid blue;
+    float: left ;
+    width: calc( (100% - 40px) / 5) ;
+    /* width: calc(100% / 5 - 10px); */
+    margin-right: 10px ;
+    
+    /* (40px) */   
+}
+.float li:last-child{margin-right: 0 !important;}
+
+.float li a{
+    background-color: antiquewhite;
+    display: block;
+    text-align: center;
+    /* padding: 5px 0; */
+    height: 30px;line-height: 30px;
+}
+.float li a:hover{
+    background-color: pink;
+}

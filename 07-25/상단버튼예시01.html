@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .wrap{
+
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            box-shadow: 0 1px 5px gray;
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .btn{
+            width: 40px;
+            height: 40px;
+            text-indent: -9999px;
+            background: url("img/toggle_button.png") no-repeat left center;
+        }
+
+        .btn.on{
+            background-position: right center;
+        }
+
+        .page{
+            width: 100%;
+            height: 100vh;
+            font-size: 100px;
+            text-align: center;
+            padding: 200px;
+        }
+
+        .left_menu{
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100vh;
+            background: white;
+            box-shadow: 1px 0 5px gray;
+            z-index: 1000;
+            padding: 150px 0 0 30px;
+            transition: all 0.3s;
+        }
+
+        .left_menu.on{
+            left: 0;
+        }
+
+        .left_menu h1{
+            margin-bottom: 50px;
+        }
+
+        .left_menu ul{}
+
+        .left_menu ul li{
+            margin-bottom: 10px;
+        }
+
+        .left_menu ul li a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $("section .page").each(function(i){
+                var back = $(this).attr("bg");
+                $(this).css({background : back});
+            })
+
+            var btn = $(".btn");
+            var l_menu = $(".left_menu");
+
+            btn.click(function(){
+                if(btn.hasClass("on")){
+                    btn.removeClass("on");
+                    l_menu.removeClass("on");
+                }
+                else{
+                    btn.addClass("on");
+                    l_menu.addClass("on");
+                }
+            })
+
+            l_menu.click(function(){
+                btn.removeClass("on");
+                l_menu.removeClass("on");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="left_menu">
+        <h1>left menu</h1>
+        <ul>
+            <li><a href="#page1">menu 1</a></li>
+            <li><a href="#page2">menu 2</a></li>
+            <li><a href="#page3">menu 3</a></li>
+            <li><a href="#page4">menu 4</a></li>
+            <li><a href="#page5">menu 5</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <header>
+            <h1>로고</h1>
+            <nav>메뉴</nav>
+            <a href="#" class="btn">메뉴</a>
+        </header>
+    
+        <section>
+            <div class="page" id="page1" bg="red">page 1</div>
+            <div class="page" id="page2" bg="yellow">page 2</div>
+            <div class="page" id="page3" bg="green">page 3</div>
+            <div class="page" id="page4" bg="pink">page 4</div>
+            <div class="page" id="page5" bg="skyblue">page 5</div>
+        </section>
+    </div>
+</body>
+</html>

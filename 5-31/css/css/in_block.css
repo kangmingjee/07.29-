@@ -1,0 +1,59 @@
+@charset "utf-8" ;
+/*rest*/
+*{
+    margin : 0;
+    padding: 0;
+}
+
+.box1{
+     background-color: beige;
+     width: 200px;
+     height: 100px;
+     margin: 50px 0 50px auto;
+     /*margin: 50px auto;*/
+    border: black solid 10px;
+    padding: 20px;
+    /*물리적크기?
+    width :200px + 40px +20=260px
+    height : 100px+40px +20 =160px
+    */
+
+    box-sizing: border-box;
+    /*물리적크기?
+    width : 200px(20+40)
+    200-20-40 =140
+    height : 100px(20+40)
+    100-20-40=40
+    */
+    
+    }
+    .p_1{
+        background-color: tan;
+        width: 50%;
+        height:100px;
+        margin: 100px auto;
+        padding: 10px 20px border-box;
+
+    }
+     
+body{border: 1px  saddlebrown solid; }
+
+
+/*
+block : div ,p,h1~h6,ul,li,ol,hr,table
+
+내용이 있으면 있는 만큼 자리차지
+내용이 없으면 자리가 없어
+width는 부모로부터 상속 받아와요 부모width 100%
+height는 부모로 부터 상속 받지 않아요
+height는 내용만큼 보인다
+width,height를 내가 지정할수 있다
+
+
+inline : a,img.span,input,textarea,b,i,del,u,sub,sup
+width,height 안먹힘 
+padding-top bottom,margin-top bottom 안먹힘
+인라인과 인라인 사이에 5px 공백생김
+*/
+
+

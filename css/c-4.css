@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+ul,ol,li {list-style: none;}
+
+a {text-decoration: none;color: inherit;}
+
+#wrap{
+    width: 1000px;    
+    overflow: hidden;
+}
+
+#header{
+    float: left;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 650px;
+}
+.logo{
+    height: 100px;
+    background-color:beige;
+    padding: 20px 10px ;
+    /* 부모 width: 200px; 자식 180  200-180 =20/2 10
+    부모 height: 100px; 자식 60 100- 60 =40/ 20  */
+    /* 단 box-sizing: border-box; 걸려 있는지 확인 */
+}
+
+.logo a{
+    display: block;
+    /* width: 200px; 부모에게 상속 받아왔음 display:block로 변경했기때문에 */ 
+    width: 180px;/* (가운제 정렬을  margin으로 가운데정렬 불럭구조는 마진으로 정렬한다)  */
+    height: 60px;  
+    text-align: center;
+    line-height: 60px;
+    background-color: cadetblue;
+    /* margin:20px 10px ;
+    margin:20px auto ; */
+
+}
+
+.nav{
+    /* 블럭구조 width 상속 받아옴  부모가  header  w200 */
+}
+
+.main{
+     /* 블럭구조 width 상속 받아옴  부모가  header  w200 */
+    width: 180px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+        /* 위아래 10은 내가 주고 싶은데로 */
+    /* 좌우w200- w180 = 20  / 2  = 10 또는  auto */
+}
+
+.main > li{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.main > li > a{
+    background:tomato;
+    /* a tag 인라인 구조 width height 안먹히고 margin padding 위아래 안먹힘; */
+    /* width height를 주고 싶어서  구조변경 */
+    display: block; 
+    /* 블럭구조는 width 부모에게서 상속 받아옴; */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px 0 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.main > li:hover > a{
+    background:olive;    
+}
+.main > li:hover .sub{
+    display: block;
+}
+.sub{
+    position: absolute;
+    left: 180px;top: -30px;
+    /* 포지셔닝을 하면
+    width는 내 자녀들의 가장큰 너비로 변경된다 
+    position: absolute이면 부모게  relative
+    포지셔닝을 쓰면
+    left top right bottom  명령을 사용할수 있다
+    */
+    width: 100%;
+    /* 부모의 width보다 더 크게 잡아도 된다 */
+
+
+    height: 200px;
+    /* .sub li a높이 40 *4(서부메뉴가 4개가 젤 많음)= 160 160보다 크게 */
+    background-color: teal;
+    /* .sub li a 배경색과 같은 색으로 주면 이질감이 없어짐
+    .sub li a 의 배경색을 지워도 된다 */
+
+    display: none;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    /* background-color: teal; */
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;   
+}
+
+.sub li a:hover{
+    background: orange;
+}
+
+
+
+#section{
+    float: left;
+    background-color: aquamarine;
+    width: 800px;
+    height: 650px;
+}
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>배경 이미지</title>
+  <style>
+    #container{
+      width:1100px;
+      margin:30px auto;
+    }
+    .box{
+      border: 10px solid blue;
+      width:300px;
+      height:300px; 
+      float:left;     
+      margin:20px;
+      background-image:url('images/bg4.jpg');
+      background-position: left top;
+      background-repeat: no-repeat;
+    }
+  #bg1{
+    background-size:auto;
+    /* 원래 배경 이미지 크기로 표시 기본 */
+    background-position:left top;
+  }
+  #bg2{
+    background-size: 200px;
+    background-position:left top;
+  }
+  #bg3{
+    background-size: 50%;
+    /* 배경이미지 너비는 부모의 너비의 50%크기로, 높이는 자동계산 */
+    background-position:left top;
+  }
+  #bg4{
+    background-size: 100% 100%;
+    background-position:left top;
+  }
+  #bg5{
+    background-size: contain;
+    background-position:left top;
+  }
+  #bg6{
+    background-size: cover
+    background-position:left top;
+  }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="bg1"></div>
+    <div class="box" id="bg2"></div>
+    <div class="box" id="bg3"></div>
+    <div class="box" id="bg4"></div>
+    <div class="box" id="bg5"></div>
+    <div class="box" id="bg6"></div>
+  </div>
+ </body>
+</html>

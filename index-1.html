@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        p{width: 500px;height: 200px;background-color: #eee; border: 1px solid black; line-height: 2;}
+        
+        .staitc{
+            position: static;
+            /* default값 기본값 */
+        }
+
+        .relative-1{
+            position: relative; /* 기준 relative위치가 0,0 */
+            /* left: -200px;
+            top: 30px; */            
+        }
+
+        .relative-2{
+            position: relative; /* 기준 relative위치가 0,0 */
+            left: 100px; /* 왼쪽에서 100px 떨어지게 한다 */
+            top : -100px ; /* 위쪽에서 -100px 떨어지게 (위로 이동) */
+        }
+        .fixed{
+            width: 100px;height: 100px;
+            background-color: black;
+            position: fixed; /* 스크롤링이 되더라도 고정하겠다   부모가 0,0*/
+            right: 30px; /* (부모의 오른쪽에서 나의 오른쪽이 30px 떨어지겠다) */
+            top: 30px;/* (부모의 위쪽에서 나의 우쪽이 30px 떨어지겠다) */
+                }
+
+        body{
+            height: 3000px;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <p class="staitc">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit et minus sit, vitae officia veritatis
+        distinctio, omnis fugiat natus blanditiis nemo maxime praesentium reiciendis ut, tempore sed ullam! Quo,
+        adipisci.
+    </p>
+    <p class="relative-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit et minus sit, vitae officia veritatis
+        distinctio, omnis fugiat natus blanditiis nemo maxime praesentium reiciendis ut, tempore sed ullam! Quo,
+        adipisci.
+    </p>
+    <p class="relative-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit et minus sit, vitae officia veritatis
+        distinctio, omnis fugiat natus blanditiis nemo maxime praesentium reiciendis ut, tempore sed ullam! Quo,
+        adipisci.
+    </p>
+    <p class="fixed"></p>
+
+</body>
+
+</html>

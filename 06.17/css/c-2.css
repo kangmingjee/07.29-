@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none;
+ color: inherit;}
+
+ body{background-color: antiquewhite;
+ color: #333;}
+ .wrap{width: 1000px;
+        height: 650px;
+        background-color: aqua;}
+    .menu1{
+        float: left;
+        width: 200px;
+        height: 650px;
+        background-color: antiquewhite;
+    }
+    
+    .logo{
+        background-color: pink;
+        height: 200px;
+    }
+    .logo a{ 
+        background-color: yellowgreen;
+        display: block;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+.abcd{
+    float: left;
+    width: 800px;
+    height: 650px;
+    background-color: blueviolet;
+    }
+
+    .is{
+        background-color: aqua;
+        height: 350px;
+    }
+    .gongji{
+        height: 200px;
+        background-color: green;
+    }
+    
+.gongji >div{
+    float: left;
+    height: 200px;
+    width: calc(100% / 3 );
+}
+    .gong1{background-color: blues;}
+    .gong2{background-color: blueviolet;}
+    .gong3{background-color: bisque;}
+    .footer{
+        height: 100px;
+        background-color: palegreen;
+    }
+    .copy{
+        float: left;
+        background-color: blue;
+        height: 100px;
+        width: 600px;
+    }
+    .right{float: left;}
+    .sns{
+        width: 200px;
+        background-color: aqua;
+        height: 50px;}
+    .familysite{
+        background-color: thistle;
+        height: 50px;
+    }
+    .left{
+        width: 200px;
+        height: 650px;
+    }
+    .right{width: 800px;
+         height: 650px;}
+    
+    

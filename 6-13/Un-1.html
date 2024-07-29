@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+
+        .box1{background-color: aquamarine;
+                width: 500px; 
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                transform:rotate(-45deg);
+                position: absolute;
+                left: -180px;
+                top: 50px;
+        }
+        .box2{background-color: sandybrown;
+                width: 200px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                transform: skewX(45deg);
+                position: absolute;
+                top: 300px;
+                left: 200px;
+
+
+                }
+
+            .box3{
+                background-color: royalblue;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 300px;
+                position: absolute;
+                top:500px;
+                left: 500px;
+
+                transition: all 1s;
+                transition-timing-function: ease-out;
+                /*     transition-timing-function: ease-in; 
+                /* 처음에는 빠르고 끝에가서 속도가 느려짐 */
+
+            }
+            .box3:hover{
+                transform: rotate(180deg);
+                background-color: aqua;
+            }
+                
+            .box4{
+                background-color: red;
+                padding: 50px 100px;
+                /* width: 300px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center; */
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50% , -50%);
+                d
+            }
+            .box4:hover{
+                /* transition: all 1s; */
+            }
+    </style>
+</head>
+<body>
+    <div class="box1">rotate</div>
+    <div class="box2">skew</div>
+    <div class="box3">scale  rotate</div>
+    <div class="box4">translate</div>
+    
+
+    <div class="box5">rotate</div>
+    <div class="box6">skew</div>
+    <div class="box7">scale  rotate</div>
+    <div class="box8">translate</div>
+</body>
+</html>

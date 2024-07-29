@@ -1,0 +1,89 @@
+@charset "utf-8"
+@<style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+</style>
+
+*{margin: 0;padding: 0;}
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.box1{
+    height: 300px;
+    border: 3px solid purple;
+}
+.box1 h1{
+        text-align: center;
+        color: purple;
+        text-t
+}
+
+
+box2 {
+    height: 600px;
+    border: 3px solid purple;
+    margin: 50px 0;
+    background :url('../img/05.png')no-repeat center;
+    background-size :150px;
+    padding: 50px;
+}
+.box1 p{
+    /*w60%
+    글자색 흰색
+    */
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.box2 h2 {
+    color: purple;
+}
+.box2 ol{
+    color: white;
+    margin: 30px;
+}
+
+.box2 p{ 
+    width: 50%;
+    color: white;
+    line-height: 2;
+}
+.box2 p ::first-letter{
+    color :red;
+    font-size : 30px;
+    font-weight: bold;
+}
+
+.box3 {
+    height: 200px;
+    border: 3px solid purple;
+}
+
+
+
+.box3{
+    height: 200px;
+    border: 3px solid purple;
+    padding: 30px;
+    background: skyblue url(../img/02.jpg)repeat;
+}
+.box3 h2 {
+    text-align: right;
+    color: purple;
+}
+.box3 p{
+    color: white;
+    line-height: 2;
+}
+.box3 p ::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+box3 p{ 
+    color: white;
+}
+.aaa{
+    
+}

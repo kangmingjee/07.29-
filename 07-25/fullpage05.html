@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/fullpage.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".full").fullpage({
+                menu:".main",
+                anchors:["menu1", "menu2", "menu3", "menu4"],
+                // navigation:true
+
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li, ol{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .header{
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            z-index: 100;
+        }
+        
+        .main{
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .main li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        .main li a{
+            display: block;
+            color: white;
+            font-weight: bold;
+        }
+
+        .full{
+        }
+        
+        .section{
+            background: url("img/bg1.jpg");
+            height: 100%;
+            background-size: cover;
+            text-align: center;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            /* border: 1px solid blue; */
+        }
+
+        .slide{
+            /* border: 1px solid greenyellow; */
+            /* width: 600px;
+            height: 400px; */
+        }
+
+        .section img{
+            position: relative;
+            right: 10%;
+            /* top: 50%;
+            transform: translate(-50%, -50%); */
+            /* border: 1px solid crimson; */
+        }
+
+        .section h3{
+            float: left;
+            position: relative;
+            width: 400px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            line-height: 150px;
+            font-weight: bold;
+            color: white;
+            font-size: 50px;
+        }
+        </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul class="main">
+                <li><a href="#menu1">Menu1</a></li>
+                <li><a href="#menu2">Menu2</a></li>
+                <li><a href="#menu3">Menu3</a></li>
+                <li><a href="#menu4">Menu4</a></li>
+            </ul>
+        </div>
+        <div class="full">
+            <div class="section" id="s0">
+                <h1>1</h1>
+            </div>
+    
+            <div class="section" id="s1">
+                <div class="slide">
+                    <h3>Slide 01</h3>
+                    <img src="img/animal01.png" alt="a1">
+                </div>
+
+                <div class="slide">
+                    <h3>Slide 02</h3>
+                    <img src="img/animal02.png" alt="a2">
+                </div>
+
+                <div class="slide">
+                    <h3>Slide 03</h3>
+                    <img src="img/animal03.png" alt="a3">
+                </div>
+            </div>
+    
+            <div class="section" id="s2">
+                <div class="slide"><img src="img/animal04.png" alt="a4"></div>
+                <div class="slide"><img src="img/animal05.png" alt="a5"></div>
+                <div class="slide"><img src="img/animal06.png" alt="a6"></div>
+            </div>
+    
+            <div class="section" id="s3">
+                <h1>4</h1>
+            </div>
+        </div><!-- full -->
+        
+    </div>
+</body>
+
+</html>

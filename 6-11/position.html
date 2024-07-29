@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/position.css">
+    <style type="text/css">
+    *{ 
+        margin: 0; padding: 0;
+        box-sizing:border-box;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px ;
+    }
+    /* body{height: 3000px;} */
+    
+    .box>div{width: 50px;height: 50px;}
+
+    .box1{
+        background-color: blueviolet;
+        position: fixed;
+        left:50%; 
+        top : 50px;
+        /* right: 0;
+        bottom: 0; */
+    }
+    .box2{
+        background-color:aqua;
+        left: 100px;
+        position: relative;
+        left: 100px;
+        top: ;
+    }
+
+    .box2 .chiLd1{
+        background-color: orangered;
+        position: absolute;
+
+    }
+
+    .box2 .chiLd2{
+        background-color: pink;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    .box3{
+        background-color: yellowgreen;
+        position: relative;
+    }
+    .box3 .chlid1{
+        background-color: thistle;
+        position: absolute;
+        right:0;bottom:0;
+    }
+    .box3 .chlid2 {
+        background-color: brown;
+        position: absolute;
+        right:0;top: 0;
+    }
+    .box4{
+        background-color: black;
+        position: relative;
+    }
+    .box4 .child1{
+        background-color: aquamarine;
+         position: absolute;
+         left: 75PX;
+         top:100px ; 
+         z-index: 12;
+    }
+    .box4 .child2{
+        background-color: tomato;
+        position: absolute;
+        left: 60PX;
+        TOP: 80PX;
+        z-index: 5;
+    }
+    .box4 .child3{
+        background-color: yellow;
+        position: absolute;
+        left: 50PX;
+        TOP: 55PX;
+        z-index: 2;
+    }
+
+    ul{
+        border: 1PX solid red;
+        position:relative;
+    }
+    ul li{
+        background-color: aqua;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+    ul li:first-child{
+        left: 200px;
+        top: 100px;
+    }
+    ul li:nth-child(2){
+        top: 100px;
+        left: 50px;
+    }
+    ul li:nth-child(4){
+        top: 200px;
+        left: 30px;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+            <h1>[포지셔닝 익히기]</h1>
+            <p>
+                position은 블럭구조 요소들을 배치하기 위한 <br>
+                속성으로 사용된다. 공중으로 띄울때 사용하며 <br>
+                속성은 4가지가 있다. <br>
+                position으로 공중을 띄우면 width값은 없어진다
+            </p>
+            <ol>
+                <li>static : 기본값</li>
+                <li>relative : 상대적 위치 지정 ,원하는 위치에 배치</li>
+                <li>absolute: 절대적 위치 지정</li>
+                <li>fixed: 블록 구조를 특정 위치에 고정할때 사용</li> 
+            </ol>
+
+            <div class="box box1">box1</div> 
+
+            <div class="box box2">
+                <div class="chiLd1">child1</div>
+                <div class="chiLd2">child2</div>
+            </div>  
+            <div class="box box3">
+                <div class="chlid1">child1</div>
+                <div class="chlid2">child2</div>
+            </div>  
+            <div class="box box4">
+                <div class="child1">child1</div>
+                <div class="child2">child2</div>
+                <div class="child3">child3</div>
+            </div>  
+
+
+            <UL>
+                <LI>1</LI>
+                <LI>2</LI>
+                <LI>3</LI>
+                <LI>4</LI>
+                <LI>5</LI>
+            </UL>
+
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+
+        
+</body>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/fullpage.js"></script>
+    <script lang="java">
+        $(function(){
+            $("#box").fullpage({
+                sectionsColor:["skyblue", "yellowgreen", "steelblue"],
+                slidesNavigation:true,
+                slidesNavPosition:"top"
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        #box2 > div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="section" id="box1">
+            <h1>section01</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sed officia aliquam mollitia, sit
+                commodi animi culpa similique asperiores itaque, exercitationem autem repudiandae, nam at perspiciatis?
+                Placeat magnam delectus totam.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore incidunt iusto sunt quas ut ex saepe.
+                Non, dolorum rem quas hic, a commodi natus, aspernatur laboriosam placeat quidem aliquid mollitia.
+            </p>
+        </div>
+
+        <div class="section" id="box2">
+            <div class="slide"><h2>slide1</h2></div>
+            <div class="slide"><h2>slide2</h2></div>
+            <div class="slide"><h2>slide3</h2></div>
+            <div class="slide"><h2>slide4</h2></div>
+            <div class="slide"><h2>slide5</h2></div>
+        </div>
+
+        <div class="section" id="box3">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sed officia aliquam mollitia, sit
+                commodi animi culpa similique asperiores itaque, exercitationem autem repudiandae, nam at perspiciatis?
+                Placeat magnam delectus totam.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore incidunt iusto sunt quas ut ex saepe.
+                Non, dolorum rem quas hic, a commodi natus, aspernatur laboriosam placeat quidem aliquid mollitia.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .box1{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            transition: backgtound-color 2s, width 1s;
+        }
+        .box1:hover{
+            background-color: blue;
+            width: 400px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin: 200px;
+            background-color:green ;
+            /* transition: rotate(0deg); */
+            transition:transform 2s;
+            
+        }
+        .box2:hover{
+            transform: rotate(180deg);
+        }
+        .box:hover{
+            transition:rotate;
+        
+        }
+        .box3{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 100px;
+            background: url(img/dog.jpg)no-repeat
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2">dd</div>
+    <div class="box3"></div>
+
+</body>
+</html>

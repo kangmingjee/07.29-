@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul, li, ol{
+            list-style: none;
+        }
+
+        body{
+            background-color: #f1f1f1;
+        }
+
+        .wrap{
+            margin-left: 0;
+            transition: all 0.5s;
+        }
+
+        .header{
+            /* width: 100%;
+            height: 100px; */
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu_btn{
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: url("img/toggle_button.png") no-repeat left center;
+            text-indent: -99999px;
+            margin: 30px 0 0 20px;
+            z-index: 100;
+            position: absolute;
+        }
+
+        .nav{
+
+        }
+
+        .hamburger{
+            width: 250px;
+            height: 100vh;
+            background-color: white;
+            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+        }
+
+        .hamburger h1{
+            margin: 100px 0 50px 50px;
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        .hamburger ul{
+
+        }
+
+        .hamburger ul li{
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .hamburger ul li a{
+
+        }
+
+        .hamburger ul li a:hover{
+            text-decoration: underline;
+        }
+
+        .open .wrap{
+            margin-left: 250px;
+        }
+
+        .open .hamburger{
+            left: 0;
+        }
+
+        .open .menu_btn{
+            background-position: right center;
+        }
+
+        .overlay{
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        .open .overlay{
+            height: 100vh;
+        }
+
+        @media screen and (max-width:768px) {
+            .header{
+                height: 100px;
+            }
+
+            .menu_btn{
+                display: block;
+            }
+
+            .hamburger{
+                left: -250px;
+            }
+        }/* 768 */
+    </style>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".menu_btn").click(function(){
+                if($("body").hasClass("open") == true){
+                    $("body").removeClass("open")
+                }
+                else{
+                    $("body").addClass("open")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="#" class="menu_btn">menu</a>
+
+            <nav class="nav">
+                <div class="hamburger">
+                    <h1>Toggle Menu</h1>
+                    <ul>
+                        <li><a href="#">Learn HTML5</a></li>
+                        <li><a href="#">Learn CSS</a></li>
+                        <li><a href="#">Learn JavaScript</a></li>
+                        <li><a href="#">Learn jQuery</a></li>
+                        <li><a href="#">Learn XML</a></li>
+                    </ul>
+                </div><!-- hamburger -->
+            </nav>
+        </header><!-- header -->
+
+        <div class="overlay">
+
+        </div>
+    </div><!-- wrap -->
+</body>
+
+</html>

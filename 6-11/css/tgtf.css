@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{background-color: aqua;}
+
+.fix{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    position: fixed;
+    right: calc(50% - 820px);
+
+
+}
+.total{
+width: 1000px;
+margin: 0 auto;
+}
+.total li{
+    width: 200px;
+    height: 200px;
+    display:inline-block;
+    line-height: 200px;
+    text-align: center;
+}
+.box1{ 
+    padding: 10px;
+    background-color: white;
+}
+.box1 ul {
+    padding: 10px;
+}
+.box1 ul li:nth-child(odd){
+    background-color: blueviolet;
+}
+.box1 ul li:nth-child(even){
+    background-color: yellow;
+}
+
+.box2{
+    padding: 10px;
+    text-align: right;
+}
+.box2 ul{}
+.box2 ul li:nth-child(odd ){
+    background-color: gold
+}
+.box2 ul li:nth-child(even){
+    background-color: black;
+}
+
+.box3{
+    height: 600px;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+
+}
+.box3 h1{
+    width: 300px;
+    border: 6px dotted purple;
+    text-align: center;
+    margin: 0 auto;
+}
+.box3 p{
+    /* border: 1px solid red; */
+    width: 500px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.abs{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+.box4{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+.box4 ul{}
+.box4 ul li:nth-child(odd){
+    background-color: blueviolet;
+}
+.box4 ul li:nth-child(even){
+    background-color: yellow;
+}
+.box5{padding: 10px;
+    text-align: right;}
+.box5 ul{}
+.box5 ul li:nth-child(odd){
+ background-color: tomato;
+}
+.box5 ul li:nth-child(even){
+    background-color: bisque;
+}
+.box6{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    position: sticky;
+    left:calc(50% - 500px);
+    top: 200px;
+}
+
+.top{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.top a{
+    background-color: black;
+    display: block;
+    height: 100px;
+}

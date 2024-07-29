@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{}
+        .container div{
+            width: 100px;
+            height: 50px;
+            float: left;
+            background-color: #006aff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin: 5px 10px;
+            padding: 10px;
+            color: white;
+            transition: all 3s;
+            overflow: hidden;
+        }
+    .container:hover div{
+        height: 400px;
+    }
+
+    .ease{
+        transition-timing-function: ease-in;
+    }
+    .liner{
+        transition: all 3s ease-in;
+    }
+    .ease-in{
+        transition: all 3s ease-out;
+    }
+    .ease-out{
+        transition: all 3s linear;
+    }
+    .ease-in-out{
+        transition: all 3s ease;
+    }
+
+    .box div{
+        overflow: hidden;
+        float: bottom;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        margin-bottom:200px 200px;}
+
+    .box1{
+        float: bottom;
+        width: 100px !important;
+        height: 100px !important;
+        background-color: aqua !important;
+    }
+    .box1:hover{
+        background-color: blue !important;
+    }
+    .box2{
+        float: bottom;
+        width: 100px !important;
+        height: 100px !important;
+        background-color: thistle !important;
+        ;
+
+    }
+    .box3{
+        width: 0px;
+        height: 0px;
+        margin: 200px;
+        border-top: 20px solid red;
+        border-right: 20px solid orange;
+        border-bottom: 20px solid green;
+        border-left: 20px solid blue;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="ease">ease</div>
+            <div class="liner">liner</div>
+            <div class="ease-in">ease-in</div>
+            <div class="ease-out">ease-out</div>
+            <div class="ease-in-out">ease-in-out</div>
+        </div>
+
+        <div class="box">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+        </div>
+
+</body>
+</html>

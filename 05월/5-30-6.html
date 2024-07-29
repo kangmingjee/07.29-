@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 내부스타일</title>
+    <style type="text/css">
+       *{
+         margin:0;
+       }
+       h2{background-color: blueviolet;
+
+        h3{ background-color: bisque;
+            margin: 100px 50px
+            border-top: 1px 5px
+            border-bottom : 5px
+        }
+
+        div {background-color: aqua;
+            margin: 10px;
+            /*padding-top :10px;
+            padding-bottom:30px;
+            padding-left:50px;
+            padding-right:50px;*/
+
+            padding: 20px 30px;
+            width: 500px;
+            height: 300px;
+        }
+
+        p{
+            /*borde-color :red ;
+            border-width :20px
+            border-style :solid ;*/
+
+            border: 20px dotted red
+            border-style :solid;
+            border-style :dotted;
+            border-style :double;
+            border-style :dashed;
+            border-style :groove;
+        }
+        
+      
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 50px;
+
+        /*margin-top : ;
+        margin : 10px  20px   30px  50px
+                 위   오른쪽   아래  왼쪽
+        margin : 10px  20px   30px  
+                  위   좌우    아래          
+        margin : 10px  20px  
+                위아래  좌우
+         margin : 50px 
+                 상하좌우
+        
+        */
+
+        padding: 20px 30px;
+
+
+       }
+       a { 
+           background-color: chartreuse;
+           margin:  100px;
+           padding: 50px;
+
+       }
+    img {
+        border: 20px solid blue;
+        width: 100px;
+        padding:50px;
+        margin: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <h2>header-2</h2>   
+    <h2>header-3</h2>  
+    
+    <ul>    
+        <li>좋아하는 과일</li>
+        <li>좋아하는 노래</li>
+        <li>좋아하는 영화</li>
+    </ul>
+
+
+
+
+    
+    <div>
+        Lorem ipsum dolor sit amet <span> consectetur</span> consectetur adipisicing elit. Quibusdam consectetur odio fugit laboriosam delectus ad ipsum aperiam doloribus enim rem cupiditate, 
+        dolore minus nesciunt aliquid architecto exercitationem facere natus maxime.
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet <span> consectetur</span> consectetur adipisicing elit. Quibusdam consectetur odio fugit laboriosam delectus ad ipsum aperiam doloribus enim rem cupiditate, 
+        dolore minus nesciunt aliquid architecto exercitationem facere natus maxime.
+    </p>
+
+    <a href="#">네이버</a>
+    <a href="#">다음</a>
+    <img src="img/1.jpg" alt="장미그림" srcset="">
+
+        
+    
+</body>
+</html>

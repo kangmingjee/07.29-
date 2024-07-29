@@ -1,0 +1,54 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+li,ul,ol{list-style: none;}
+
+
+body{ background-color: black;
+    color: white;}
+
+#wrap { 
+
+    padding: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    border: 1px solid white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transform: translate(-50%,-50%);
+    /* transform 크기는 내가 기준 중심포인트를 이동 */
+}
+h1{
+ margin-bottom: 30px;
+}
+p{
+    margin-bottom: 30px;
+}
+.more{
+    background-color: pink;
+    /* a tag 인라인 구조 
+    인라인 구조는 width height 안먹힘 
+    패딩 마진의 위아래 안먹힘 해결은 구존변경 */
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 20px 0;
+    border-radius: 10px ;
+    color: black;
+    text-align: center;
+}
+.down{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+}
+
+@keyframes{
+    0%{ bottom:10px;}
+    50%{ bottom:50px}
+    100%{ bottom:10px }
+}

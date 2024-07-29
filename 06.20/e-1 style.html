@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    *{margin: 0;padding: 0; box-sizing: border-box;}
+        ul,ol,li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        html, body{height: 100%;}
+
+    body{background-color: white;
+        color: black;}
+    
+     #wrap{height:100%;}
+
+        .up{
+            height: calc(100% - 120px);
+            background-color: darkblue;
+        }
+            .header{ width:200px;
+                height:100%;                    
+                float: left;
+                background: #DDD;
+            }
+            .logo{
+                height: 100px;
+                background-color: aqua;
+            }
+            .menu{
+                height: 600px;
+                background-color: thistle;
+        
+            }
+            .spanmenu{
+                height: 200px;
+                background-color: black;
+            }
+        
+            .content{
+                width: 400px;
+                height:100%;
+                background-color: orange;
+                float: left;
+            }
+            .con1{
+                height: 20%;
+                background-color: yellow;
+            }
+            .con2{
+                height: 30%;
+                background-color: wheat;
+            }
+            .con3{height: 30%;
+            background-color: aqua;}
+            .con4{
+                height: 20%;
+                background-color: violet;
+            }
+
+            .img_slide{
+                width: calc(100% - 200px - 400px);
+                background-color: antiquewhite;
+                height: 100%;
+                float: left;
+            }
+
+        .footer{
+            height: 120px;
+            background-color: yellowgreen;
+        }
+        .f_logo{
+            width: 200px;
+            height: 100%;
+            background-color: aliceblue;
+            float: left;
+        }
+        .f_right{
+            width: calc(100% - 200px );
+            height: 100%;
+            background-color: aquamarine;
+            float: left;
+        }
+        .f_up{
+            height:50%;
+            background-color: aqua;
+        }
+        .f_down{
+            height: 50%;
+            background-color: bisque;
+        }
+    </style>
+    
+    
+</head>
+<body>
+        <div id="wrap">
+
+            <div class="up">
+
+                <header class="header">
+                        <div class="logo">logo</div>
+                        <div class="menu">menu</div>
+                        <div class="spanmenu">spon menu</div>
+                </header><!-- header -->
+
+
+                <div class="content">
+                    <div class="con1">이미지</div>
+                    <div class="con2">공지사항</div>
+                    <div class="con3">갤러리</div>
+                    <div class="con4">link</div>
+
+                </div> <!-- content -->
+
+                <div class="img_slide">
+                    이미지슬라이드
+                </div><!-- img_slide -->
+
+            </div><!-- up -->
+
+            <footer class="footer">
+                <div class="f_logo">로고</div>
+                <div class="f_right">
+                        <div class="f_up">하단메뉴</div>
+                        <div class="f_down">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptates, numquam consequuntur culpa praesentium, maiores officia error amet exercitationem officiis enim voluptatibus commodi possimus laudantium ipsam.
+                            Atque adipisci architecto assumenda.</div>
+
+                </div>
+            </footer><!-- footer -->
+        
+        </div><!-- wrap -->
+</body>
+</html>

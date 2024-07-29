@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        a{text-decoration: none;
+         color: inherit;}
+
+         .menu_1{
+            width: 1000px;
+            background-color: red;
+            margin: 50px auto;
+            /* display: inline-block; */
+            overflow: hidden;
+         } 
+         .menu_1 div{
+            background: yellow;
+            float: left;
+            width: 200px;
+         }
+         .menu_1 div a{
+            display: block;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+         }
+        .menu_2{ 
+            width: 1080px;
+            background-color: red;
+            margin: 0 auto;
+            overflow: hidden;
+            /* display: inline-block; */
+
+            overflow: hidden;}
+        .menu_2  a{            
+            background-color: antiquewhite;
+            float: left;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 20px;
+        }
+
+            .menu_2 a:last-child{margin-right: 0! important;}
+
+            .menu_3{
+                width: 830px;
+                text-align: center;
+                margin: 10px auto;
+                padding: 0;
+                overflow: hidden;
+                list-style: none;
+                background-color: firebrick;
+
+            }
+            .menu_3 li{ float: left;
+            background-color: aqua;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;            
+            text-align: center;
+            margin-right: 20px;
+            /* margin: 10px 20px 20px 10px  */
+            }
+            .menu_3 li:last-child{margin-right: 0 !important;
+            }
+            .menu_3 li a{
+                display: block;}
+    </style>
+    
+</head>
+<body>
+     <!-- flot left
+       flot 내 width는 없어지고 내용만큼만 width가 잡힌다  -->
+</body>
+</html>
+
+<div class="menu_1">
+     <div><a href="#">menu1</a></div>
+     <div><a href="#">menu2</a></div>
+     <div><a href="#">menu3</a></div>
+     <div><a href="#">menu4</a></div>
+     <div><a href="#">menu5</a></div>
+</div>
+
+<div class="menu_2">
+    <a href="#">menu1</a>
+    <a href="#">menu2</a>
+    <a href="#">menu3</a>
+    <a href="#">menu4</a>
+    <a href="#">menu5</a>
+</div>
+
+<ul class="menu_3">
+    <li><a href="#">menu1</a></li>
+    <li><a href="#">menu2</a></li>
+    <li><a href="#">menu3</a></li>
+    <li><a href="#">menu4</a></li>
+    <li><a href="#">menu5</a></li>
+
+</ul>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Transform</title>
+<style>
+		.container{
+			width: 1000px;
+			margin: 20px auto;
+			border: 1px solid red;
+			height: 500px;
+			/* overflow: hidden; */
+
+		}
+		.origin{
+			width: 100px;
+			height: 100px;
+			background-color: antiquewhite;
+			float: left;
+			margin: 20px;
+			transition: all 1s;
+		}
+	#scale1:hover{
+		transform: scale(3);
+		/* 가로 세로가 2배 확대 */
+	}
+	#scale2:hover{
+		transform: scaleX(2.5);
+		/*X축으로 (가로방향)으로 2.5배 확대 */
+	}
+	
+	#scale3:hover{
+		transform: scaleY(0.7);
+		/*Y축으로 (세로방향)으로 0.7배 축소 */
+	}
+	#skew1:hover{
+		transform: skew(45deg);
+		/* x축으로 45도 비틀기 */
+		transform: skew(45deg,15deg);
+	}
+	#skew2:hover{
+		transform: skew(45deg);
+		/* x축으로 45도 비틀기 */
+		transform: skew(45deg,15deg);
+	}
+	#skew3:hover{
+		transform: skew(-15deg);
+
+		/* x축으로 45도 비틀기 */
+		/* transform: skew(45deg,15deg); */
+	}
+	h1{
+		background-color: black;
+		height: 200px;
+		line-height: 200px;
+		width: 1000px;
+		color: white;
+		text-align: center;
+		transform: skewX(15deg);
+	}
+	h1:hover{
+		transform: skew(-15deg);
+	}
+	.head{
+		transform: skewX(0deg);
+		font-style: italic;
+	}
+</style>
+</head>
+
+<body>
+	<div class="container">	
+		<div class="origin" id="scale1"> </div>
+	
+			<div class="origin"id=scale2>
+				<img src="images/tree.jpg" alt="tree"></div>
+
+			<div class="origin"id="scale3">
+				<img src="images/tree.jpg" alt="tree"></div>
+
+
+			<div class="origin"id="skew1">
+				<img src="images/tree.jpg" alt="tree"></div>
+
+			<div class="origin"id="skew2">
+				<img src="images/tree.jpg" alt="tree"></div>
+
+			<div class="origin"id="skew3">
+				<img src="images/tree.jpg" alt="tree"></div>
+			
+	</div><!-- container -->
+	
+
+
+<h1> css 변형 함수 익히기</h1>
+<div class="head"></div>
+</body>
+</html>

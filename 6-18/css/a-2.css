@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header {
+    height: 100px;
+    background-color: beige;
+}
+
+.logo {
+    float: left;
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+}
+
+.logo a {
+    background-color: yellow;
+    display: block;
+    width: 150px;
+    height: 80px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 80px;
+}
+
+.nav {
+    float: right;
+    margin: 50px 20px 0 0;
+}
+
+.main{}
+
+.main > li{
+    float: left;
+    position: relative;
+}
+
+.main > li > a{
+    background-color: pink;
+    display: block;
+    width: 180px;height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sub{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 100;
+    width: 100%;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    background-color: skyblue;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sub_bg{
+    width: 1200px;
+    height: 130px ;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top:100px;
+
+}
+
+
+
+#section {
+    /* height: 500px;
+    background-color: burlywood; */
+}
+
+.imgslide {
+    height: 300px;
+    background-color: pink;
+}
+
+.contents {
+    height: 200px;
+    background-color: aqua;
+}
+
+
+
+
+#footer {
+    height: 100px;
+    background-color: thistle;
+}

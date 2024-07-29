@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*reset*/
+*{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;}
+
+h1{text-align: center;margin: 30px 0;}
+
+
+
+/*블럭구조
+내용이 있으면
+width 부모의 100% 상속
+height 내용만큼만 보임
+
+
+
+**내용이 없으면
+ width,height 꼭 설정
+
+
+ ** 블록 구조를 부모의 width 에서 
+ 내가 지정한 width 있으며 maring 으로 중앙 정렬
+ margin : 위아래여백 auto;
+
+*/
+
+
+
+
+
+
+
+
+.main{
+    width: 1400px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.main li{
+    width: 200;
+    height: 50px;
+    text-align:center ;
+    line-height :50px; ;
+    background: pink;
+    display : inline-block;
+}
+
+/* 인라인구조
+width height 입력을 해도 안먹힘
+padding 위아래 margin 위아래 안먹힘
+
+옆으로 배열한다 5px 공간이 생긴다
+*/
+
+.main_1{
+    /*1000
+    50
+    보더
+    가운데*/
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.main_1 li{
+    width: 200px;
+    height: 50px;
+    text-align:center ;
+    line-height :50px; 
+    background: pink;
+    float: left ;
+    
+}
+.box { width: 500px;    
+        height: 300px;
+        background-color: aliceblue;
+        /*clear: both;*/
+        }

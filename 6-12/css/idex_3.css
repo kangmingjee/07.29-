@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*reset*/
+* {margin: 0; padding: 0;}
+
+ul,li,ol{list-style: none;}
+
+a{text-decoration: none;}
+
+    /*reset*/
+
+  .h1{text-align: center;margin-bottom: 100px;}
+    
+  /*reset*/
+
+.menu{
+    width: 100px;
+    margin: 0 auto;
+    background-color: aqua;
+    overflow: hidden;
+    /*높이가 0이된걸 해결함*/
+}
+
+
+.menu li{
+    float: left; 
+    background-color: aqua;
+    margin: 0 10px;
+    width: calc(100%  / 6 - 20px );
+    
+}
+.menu li a {
+    /*좌우 마진을 10씩 설정*/
+    background-color: beige;
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height:50px ;
+    font-size: 20px
+
+    /*border*/
+
+}
+
+.menu li a :hover{
+    background-color: turquoise;
+}
+.main_menu{
+    background-color: chocolate;
+    width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.main_menu > li{
+    float: left;
+    width: calc(100% / 4);
+}
+
+.main_menu > li > a{
+    background-color: pink;
+    display: block;
+    height: 50px;
+
+}

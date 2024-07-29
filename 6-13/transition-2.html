@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        ul,li{list-style: none;}
+        a{text-decoration: none;color: inherit;}
+        .wrap{
+            width: 620px;
+            margin: 100px auto; }
+        .menu{}
+        .menu li{
+            width: 200px;
+            height:200px;
+            background-color: thistle;
+            border-radius: 20px;
+            float:left;
+            position: relative;
+            /* overflow: hidden; */
+            /* left: 0; */
+        }
+        .menu li:nth-child(2){margin: 0 10px;}
+        .menu li a{
+            display: block;
+            height: 100%;
+            color: black;
+        }
+        .menu li a h2{
+            width: 200px;
+            /* height: 200px; */
+            font-size: 35px;
+            text-align: center;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 50%;
+            top:100%;
+            transition: all 0.3s;
+            transform: translate(-50% , -50%);
+            /*translate를 걸어서 
+             top부터 -50% 떨어짐 ,양옆으로 -50% 떨어짐
+              도형이 걸쳐지면서 그래서 opacity를 준다
+                */
+            opacity: 0;
+        }
+        .menu li a h2 span{
+            font-size: 24px;
+            display: block;
+        }
+        .menu li a:hover h2{
+            top: 50%;
+            /* top(위)로 부터 50% 떨어져서 보임 */
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+        
+    <div class="wrap">
+        <!-- 200*3 margin 10 *2 w620-->
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <h2>title1 <span>text1</span></h2>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <h2>title2 <span>text2</span></h2>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <h2>title3 <span>text3</span></h2>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+    <!-- wrap -->
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+body {
+    color: #f00;
+}
+a{
+    color: inherit;
+    /*color :#444;*/
+    text-decoration: none;
+}
+.list{
+    background-color: antiquewhite;
+}
+.list li {
+    background-color: aqua;
+    width: 300px;height: 100px;
+    display: inline block;
+    text-align: center;
+
+}
+.list li a { 
+ background-color: blueviolet;
+list-style: 100px;
+display: block;
+text-align: center;
+/*block 구조는 부모부터 width는 상속받는다 300px**/
+
+}
+.menu{
+    border: 1px solid red;
+    /*width :500px;
+    margin : @ auto;*/
+    text-align: center;
+}
+.menu div{
+    /*border: 1px solid green;*/
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+            margin: 20px 30px;
+}
+.menu div a { 
+    background-color: pink;
+    display: block;
+    line-height: 50px;
+border-radius: 25px 0;
+color: hotpink;
+font-weight: bold;
+}
+
+
+

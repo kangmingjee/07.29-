@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Transform</title>
+<style>
+	.container{
+		width: 60px;
+		height: 60px;
+		margin: 60px;
+		animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+	}
+
+	.box1{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		margin: 50px auto;
+		border: 1px solid red;
+		transition-property: width;
+		/* 변경될 대상 설정 */
+		transition-duration: 1s;
+		/* 트랜지션 시간 1s 1ms */
+	}
+
+	.box1:hover{
+		width: 200px;
+		height: 150px;
+		background-color: aquamarine;
+	}
+	
+</style>
+</head>
+
+<body>
+	<div class="box1"></div>
+	
+</body>
+</html>

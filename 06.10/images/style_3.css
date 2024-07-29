@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+/* reset */
+
+h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.menu{
+    width: 1200px;
+    margin: 0 auto;
+    
+    overflow: hidden;
+    /* 높이가 0이 된 걸 해결함 */
+
+}
+
+.menu li{
+    float: left;
+    /* with가 없어짐
+    .menu 높이가 0이 됨 -> .menu에 overflow: hidden으로 해결*/
+
+    margin: 0 10px;
+    width: calc(100% / 6 - 20px);
+}
+
+.menu li a{
+    background-color: aquamarine;
+    display: block; /* 부모의 width를 상속 받아옴 */
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18pt;
+    border-radius: 15px;
+}
+
+.menu li a:hover{
+    background-color: honeydew;
+}
+
+/* ------------------------------------------- */
+
+.main_menu{
+    background-color: chocolate;
+    width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.main_menu > li{
+    float: left;
+    width: calc(100% / 4);
+}
+
+.main_menu > li a{
+    background-color: pink;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

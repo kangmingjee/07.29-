@@ -1,0 +1,32 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+ul,li,ol {list-style:none;}
+
+h1{
+    background-color: aqua;
+    text-align: center;
+    margin: 30px 0; 
+}
+.list{
+    background-color: aqua;
+    text-align: center;
+}   
+
+.list li{
+    width: 200px;
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+.list li a{
+    display: block;
+    background-color: tomato;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*rest*/
+*{margin: 0;padding: 0;}
+
+a{
+    text-decoration: none;
+    color: #333;
+    color: inherit;
+    /*color : inherit;
+    부모에게로부터 글자색을 상속*/
+}
+
+ul,li,ol{list-style: none;}
+
+body{
+    color: #333;
+}
+h1{
+    text-align: center;
+    border: 1px solid red;
+}
+.list{
+    border: 1px solid blue;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.list li{
+    border: 1px solid green;
+    width: 200px;
+    /* margin: 0 auto; */
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+.list li a{
+    background-color:pink;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.list_1{
+    border: 1px black solid;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.list_1 li{
+    width: 200px;
+    background-color: hotpink;
+    float: left;
+}
+.float_h1{
+    /*clear : both;*/
+}
+.list_1 a{
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+.list_2{
+    width: 100px;
+    border: 1px solid turquoise;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.list_2 li{
+     background-color: beige;
+     float: left;
+     width: calc(100% / 5);
+}
+.list_2 li a{
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+/*float 
+블럭구조나 인라인 구조인 tag들을 옆으로 여유분없이 배열할때 사용
+부모가 아닌 자식을에게 명령어 입력한다.
+float인 구조들은 width 글자만큼만 보여
+float인 구조의 부모는 height가 0인된다 (단 높이가 있을때는 제외)
+부모의 height가 0이되면 부모의 다음 구조물이 따라올라온다
+해결방법은 부모에게 height를 주거나 overflow:hidden을 주거나
+다음 구조물에게 clear : both;를 입력한다
+
+*/
+
+
+
+

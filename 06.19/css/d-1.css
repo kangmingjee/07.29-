@@ -1,0 +1,106 @@
+@charset "UTF-8";
+*{margin: 0; 
+padding: 0;
+box-sizing: border-box;}
+
+ul,li,ol{list-style: none;}
+
+a{text-decoration: none;
+color: inherit;}
+
+#wrap{
+
+}
+
+.header{
+    width: 200px;
+    height:850px;
+background-color: #aaa;
+float: left;}
+
+.logo{
+    height: 100px;
+    background-color: yellowgreen;
+}
+.nav{
+    height: 500px;
+    background-color: aqua;
+}
+.spot{
+    height: 50px;
+    background-color: yellow;
+}
+.right{
+    /* overflow: hidden; */
+    width: calc(100% -200px);
+    height: 100px;
+    position: relative;
+    블록구조는 높이 상속 
+    background: orange;
+}
+.imgslide{
+    height: 400px;
+    width: 100% ;
+    /* 이유 : 자녀는 부모의크기를 무조건 100% 인지한다  */
+    /* 안써도된다 (블럭구조 특징) 상속받아오기때문에  */
+    background-color: darkblue;
+
+}   
+.banner{
+     /* 이유 : 자녀는 부모의크기를 무조건 100% 인지한다  */
+    /* 안써도된다 (블럭구조 특징) 상속받아오기때문에  */
+    height: 200px;
+    background-color: #aaa;
+}.content{
+    height: 250px;
+    background-color: aquamarine;
+}
+
+.link{
+    width: 150px;
+    height:300px;
+    background-color: aliceblue;
+    /* float: left; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.footer{
+    clear: both;
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+}
+.footer > div{ 
+    float: left;
+    height: 100px;
+}
+.f_logo{
+width: 200px;
+background-color: black;
+color: white;
+text-align: center;
+}
+.f_text{
+    width: calc( 100% - 200px - 200px);
+    background-color: violet;
+}
+.sns{
+    /* width: calc(100% -200px - 700px); */
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.down{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    /* transform은 내꺼 크기를 기준으로 내 width x (가로)값의 반만 왼쪽으로 이동 */
+}
+
+@keyframes{
+    0%{ bottom:10px;}
+    50%{ bottom:50px}
+    100%{ bottom:10px }
+}

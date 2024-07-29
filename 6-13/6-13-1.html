@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <style type="text/css">
+        body{margin: 200px;;}
+        div{width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 100px;
+            padding: 20px;}
+
+            .box1{background-color: yellow;
+                /* transform: scale(1.5);} */
+                /* transform: scale(2,4);} */
+                transform: scaleX(1.5);
+
+                -webkit-transform: scaleY(1.5);
+                -ms-transform: scaleY(1.5);
+                -moz-transform: scaleY(1.5);
+                -o-transform: scaleY(1.5);
+            }
+            .box2{
+                background-color: palegoldenrod;
+                transform: rotate(-90deg);
+                /* rotate deg 90도로 돌리면  */
+            }
+            .box3{
+                background-color: pink;
+                transform: rotateX(180deg);
+            }
+            .box4{
+                background-color: wheat;
+                transform: rotateY(180deg);
+            }
+            .box5{
+                /* background-color: aqua; */
+                /* transform: skewX(45deg); */
+                /* transform: skewy(45deg); */
+                transform: skew(45deg,15deg);
+            }
+            .box6{
+                background-color: brown;
+                /* transform: translate(500px,300px); */
+                /* transform: translate(-100% ,100%); */
+                transform: translateX(50%);
+                /* 내크기 기준으로 높이가 100%이동하고, */
+            }
+            .box7{
+                background-color:red;
+                width: 300px;height: 150px;
+                margin: 0;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                /* margin-left: -150px;
+                margin-top: -75px; */
+                /* left: calc(50%-150px);
+                top: calc(50%-75=px); */
+                transform: translate(-50%-50%);
+            }
+            
+            .box8{
+                background-color: goldenrod;
+                transform-origin: left bottom;
+                transition:rotate(0deg);
+                transition: all 0.1s;
+            }
+            .box8:hover{
+                transform: rotate(15deg);
+            }
+            .box9{
+                background-color: aqua;
+                border-radius: 50%;
+                transform: all 0.3s;
+                transform-origin: left bottom;
+            }
+            .box9:hover{
+                transform: scale(1.5)
+                rotateY(180deg);
+                
+            }
+    </style>
+</head>
+<body>
+    
+
+        <div class="box1">box box1</div>
+        <div class="box2">box box1</div>
+        <div class="box3">box box1</div>
+        <div class="box4">box box1</div>
+        <div class="box5">box box1</div>
+        <div class="box6">box box1</div>
+        <div class="box7">box box1</div>
+        <div class="box8">box box1</div>
+        <div class="box9">box box1</div>
+</body>
+</html>

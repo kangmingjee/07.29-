@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* class id
+        class tag에게 별명 부여하기 
+        다른 tag나 같은 tag에 같은 class 부여할수 있다.
+        class는 여러군대 사용할수 있다
+        class는 하나의 tag에 여러개를 부여할수 있다.
+        id는 전체 코드에서 중복할 수 없다.
+        class id 의 이름을 만드는 규칙은 *공백안됨,
+        숫자로 시작하면 안됨, -,_ 특수문자 사용가능 ,대소 구분함
+        style에서 선택자로 불려지는 것들은
+        tag ex)h1{} div{}
+        .classname
+        ex).top .wrap.header
+        #idname
+        ex)#footer #innerx
+        */
+
+        a{text-decoration: none;
+        color: #333;
+        background-color: yellowgreen;
+        /* width: 500px;} */}
+        .menu_1 {
+            border: 1px solid red;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .menu_1 > div{
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .menu_1>div > a {
+            height: 50px;
+            background-color: pink;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+        }
+        .menu_2{
+            border: 1px solid blue;
+            text-align: center;
+        }
+        .menu_2>div{
+            display: inline-block;
+        }
+        .menu_2>a {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align:center;
+            line-height: 50px;
+            margin: 0 auto;
+        }
+        .menu_3{
+            border: 2PX solid rebeccapurple;
+            padding: 0;
+            text-align: center;
+            list-style: none;
+       
+        }
+        .menu_3 li{
+            display: inline-block;
+            width: 100px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .menu_3 li a{
+            display: block;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        .menu_4{
+            width: 960px;
+        /* width: calc(180px*5 + 15PX*4); */
+        background-color: aqua;
+        list-style: none;
+        overflow: hidden;
+        }
+        .menu_4 li{
+            height: 100px;
+            line-height:100px;
+            background-color: blueviolet;
+            padding: 0;
+            width: 180px;
+            float: left;
+            margin-left: 15PX;
+            /* margin: 0 a; */
+        }
+        .menu_4 li:first{ margin-left: 0}
+        /* margin-right: 0; */
+        }
+        .menu_4 li a{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- flot inline-block 단점 : 5px 씩 떨어지는걸로 
+        width나 margin을 계산으로 잡아야 하는 불편함이 있다 
+        flot 부모로 부터 독립 바닥에서 띄우기
+        
+        특징 flot left right 
+            flot 내 width는 없어지고 내용만큼만 width가 잡힌다
+            (해결책은 width 추가 )
+            flot은 바닥에서 띄우기이기 때문에 부모의 높이가 0이 된다.
+                        (해결책은 부모에게 height 주거나 
+                        overflow:hidden ,다음번에 오는 구조에게 clear : both 
+                        width 추가 )-->
+
+</body>
+        <div class="menu_1">
+            <div><a href="#">menu-1</a></div>
+            <div><a href="#">menu-2</a></div>
+            <div><a href="#">menu-3</a></div>
+            <div><a href="#">menu-4</a></div>
+            <div><a href="#">menu-5</a></div>
+        </div>
+        <div class="menu_2" >
+            <div><a href="#">menu1</a></div>
+            <div><a href="#">menu2</a></div>
+            <div><a href="#">menu3</a></div>
+            <div><a href="#">menu4</a></div>
+            <div><a href="#">menu5</a></div>
+        </div>
+
+        <ul class="menu_3">
+            <li><a href="#">menu-1</a></li>
+            <li><a href="#">menu-2</a></li>
+            <li><a href="#">menu-3</a></li>
+            <li><a href="#">menu-4</a></li>
+            <li><a href="#">menu-5</a></li>
+        </ul>
+
+        <ul class="menu_4">
+            <li><a href="#">manu1</a></li>
+            <li><a href="#">manu2</a></li>
+            <li><a href="#">manu3</a></li>
+            <li><a href="#">manu4</a></li>
+            <li><a href="#">manu5</a></li>
+        </ul>
+</html>

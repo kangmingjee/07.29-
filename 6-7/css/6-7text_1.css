@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+a{ text-decoration: none;
+    color:#444;
+}
+ul, li, ol{
+    list-style:none ;
+    
+}
+
+
+.menu {
+    width: 1200px;
+    height: 500px;
+    background-color: gray;
+    margin: 0 auto;
+    
+}
+.left{
+        width: 200px;
+        height: 100px;
+        background-color: aquamarine;
+        float: left;
+}
+
+.left ul{
+        
+}
+
+
+.right{
+    width: 1000px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}

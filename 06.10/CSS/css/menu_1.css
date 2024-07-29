@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*reset*/
+*{margin: 0;padding: 0;} 
+
+/*reset*/
+
+.menu {
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.menu li{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        float: left;
+        margin: 0 auto;
+}
+.menu li a{
+        width:100px;
+        height:100px;
+        background-color: beige;
+        text-align: center;
+        line-height: 100px;
+}
+
+.sub_menu{
+    background-color: aquamarine;
+}

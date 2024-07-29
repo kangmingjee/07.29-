@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;            
+        }
+        .contents{
+            width: 500px;
+            height: 300px;
+            background-color: burlywood;
+            margin: 50px auto;
+            position: relative;
+            /* left: 500px; */
+        }
+        .contents h1{
+            font-size: 50px;
+            text-align: center;
+            background-color: aqua;
+            width: 300px;
+            height: 80px;
+            position: absolute;
+            left: 50%;/* (부모의 너비 50% 왼쪽에 위치하기) */
+            top: 50%;/* (부모의 높이 50% 왼쪽에 위치하기) */
+            margin-left: -150px;/* (h1를 .contents의 정 가운데 놓고 싶을때 h1의 width 반값을 마진으로 주기 ) */
+            margin-top: -40px;/* (h1를 .contents의 정 가운데 놓고 싶을때  h1의 height 반값을 마진으로 주기 ) */   
+            /* 겹쳐서 보이는 건 무조건  position: absolute;
+            마지막 개체가 보임 */
+            /* z-index: 0; 개체 순서 변경 하는 방법 숫자 클수록 우선순의 낮을수록 뒤에 보임 */           
+                
+        }
+
+        .sticky{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            position: sticky;
+            left: 50%;
+            top: 100px;
+
+        }
+        body{height: 3000px;}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contents">
+        <h1>포지셔닝</h1>
+    </div>
+
+    <p class="sticky">sticky</p>
+
+
+</body>
+
+</html>

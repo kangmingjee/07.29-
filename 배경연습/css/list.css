@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.box1{
+    border: 1px solid black;
+}
+
+.box1 span , .box1 p{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px;
+}
+.box1 span:nth-child(1){
+    background-color: red;
+}
+
+.box1 span:nth-of-type(2){
+    background-color: blue;
+}
+
+.box1 p:nth-child(2){
+    background-color: pink;
+}
+
+.box1 p:nth-of-type(1){
+    background-color: pink;    
+}
+
+.box1 span:nth-last-of-type(1){
+    background-color: aqua;
+}
+
+.list{
+    border: 1px solid red;
+    margin: 50px 0;
+    padding: 0;
+}
+.list li{
+    list-style: none;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px 20px;
+    text-align: center;
+    line-height: 50px;
+    background-color: azure;
+}
+
+.list li:nth-child(1){
+    background-color: aqua;
+}
+/* .list li:first-child{
+    background-color: aqua;
+} */
+
+.list li:nth-child(7){
+    background-color: bisque;
+}
+
+/* .list li:last-child{
+    background-color: bisque;
+} */
+
+
+.list li:nth-child(even){
+    background-color: red;
+}
+
+.list li:nth-child(odd){
+    background-color: blue;
+}
+.list li:nth-child(2n+1){
+    /* 2*0 + 1 = 1;
+    2*1 + 1 = 3;
+    2*2 + 1 = 5; */
+
+}
+.list li:nth-child(2n+3){
+    /* 2*0 + 3 = 3;
+    2*1 + 3 = 5;
+    2*2 + 3 = 7; */
+
+}
+
+.list li:nth-child(2n-1){
+    /* 2*0 -1 = -1;
+    2*1 -1 = 1;
+    2*2  -1= 3; */
+
+}
+.list li:nth-child(-n+5){
+    /* -0+ 5 = 5;
+    -1+ 5 = 4;
+    -2+ 5 = 3; */
+    
+
+}
+

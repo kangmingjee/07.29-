@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+.box1{
+    width: 500PX;
+    height: 300PX;
+
+    border: 1px solid red;
+    margin: 20 auto;
+    position: relative;
+
+}
+
+.box1 > div {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+
+}
+
+.box1 .box_inner1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.box1 .box_inner2{
+    position: absolute;
+    left: 150px;
+    right: 100px;
+    bottom: 10px;
+}
+
+.box1 .box_inner3{
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    background-color: aqua;
+
+}

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*
+블럭구조 : h1~h6 
+        p, div,section,header,article, section
+table.tr.td,th, 
+body
+ul,li,ol 
+         ***내용이 있을때:
+                width는 부모의 width를 상속받아요
+                height : 상속 안됨
+
+            내가 입력한  width height 보다 내용이 넘치면
+            내용이 다 보인다(over flow :hidden)
+            
+
+         **** 내용이 없을때: 아무것도 안보임
+            width height 를 지정해서 눈에 보이게 만들어 주면됨
+
+        **쌓이는 구조가 블럭 구조
+
+
+        부모의 wudth에서 자식이 width를 지정했을때
+        가운데 정렬 하고 싶으면 margin :0 auto
+
+
+
+인라인구조:img,b,aside, a,span,iput textarea
+특징 : 옆으로 구조 인라인 5px 떨어진다.
+* width ,height 안먹힘  
+  margin 위아래, padding 위아래  안됨 ,좌우 는 됨
+  지정해야함 
+
+    display :inline-block
+    width height 먹힘
+    옆으로 배열 한다 (5px 가지고 들어옴
+    padding margin 사방으로 다 먹힌다.
+*/
+/*reset*/
+*{ margin: 0; padding: 0;}
+a {
+    text-decoration:none;
+    color: inherit;
+}
+ul,ol,li{list-style: none;}
+
+.head{
+    background-color: blueviolet;
+}
+.h1{
+    color: burlywood;
+}
+.head,.h1{
+    text-align: center;
+}
+.p{
+    height: 30px; width: 300px;
+    background-color: yellow;
+    overflow: scroll;
+    overflow: auto;
+    margin: 0 auto;
+}
+.box1,.box2,.box3{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    /*margin: 10px 20px 30px 40px;
+                10px 20px 30px
+                10px 20px
+                10px */
+    margin: 30px 50px 60px;
+    padding:50px;
+    /*w200+50+50=300
+    h200+50+50=300*/
+    border: solid 10px black;
+
+    /*border-color : ;
+     border-style : ;
+     border */
+     box-sizing: border-box;
+}
+body {
+    text-al
+}
+

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*reset*/
+*{margin: 0;padding: 0;
+    box-sizing: border-box;}
+
+ul,ol,li{list-style: none;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+body{
+    font-family: "Lobster Two", sans-serif;
+}
+h1{
+    font-family: "Lobster", sans-serif;
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+.in_block{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border:1px solid black;
+    text-align: center;
+    /*width 80% -20- 20 -1-1
+    80%안에  패딩과보더가 포함되어있다.
+    box-sizing : border-box 설정을 안하면
+    width 80%+20+20+1+1 
+
+    */
+}
+.in_block li{
+    border: 1px solid RED;
+    display: inline-block;
+    width: calc(100% / 5 - 10PX );
+
+}
+.in_block li a{
+    background-color: tan;
+    display: block;
+    padding: 5PX 0;
+}
+.in_block li a:hover{
+    background-color: aqua;
+}
+
+.flot{
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.flot li{
+     border: 2px solid yellowgreen;
+     float: left;
+     display: inline-block;
+     width: calc( (100% - 40px) / 5);
+     margin-right: 10px;
+     /*(40px)*/
+}
+.flot li:last-child{margin-right:0 !important;}
+.flot li a{ 
+    display: block;
+    background-color: pink;
+    text-align: center;
+    padding: 5px 0;
+}   
+.flot li a:hover {
+    background-color: blueviolet;
+}

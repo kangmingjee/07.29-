@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>글자모양 tag</title>
+	</head>
+	<body>
+		<font>강              민지</font> <br>
+		<font size='7'>강민지</font><br>
+		<font color="red"'>강민지</font><br>
+	            <font face="궁서"'>강민지</font><br>
+		<font face="돋움" color="blue" size='7'>강민지</font> <br>
+
+		<p>이전에는 <font color="blue" size='7'>Div</font>에 id를 할당해서 html을 구성했다고 한다.
+근데 이는 수 많은 Id와 class값을 할당해야하기에,
+어떤 역할을 하는 <font face="돋움">컨테이너</font>인지 알기 위해서는 시간이 들 수 밖에 없었다.
+그래서 각태그가 어떤 역할을 하는지 한눈에 구분하기 위해<br> 나타난 것이 시멘트 태그다.
+
+웹브라우저의 기본적인 구조를 활용해, 구성을 도와주는 html태그다.
+고로, 해당 태그가 나타내는 것이 어디에 위치할지 한눈에 알 수 있는 장점이 있다.
+대표적으로<br> header, section, footer등이 있다.
+header 태그
+헤더 태그는 최상단에 주로 위치하며, 로고나 메뉴바, 서치엔진 등, 웹 브라우저의 머리 격에 해당한다.
+form을 활용해 감싸주는 경우도 있고
+Nav를 통해 메뉴판을 추가하기도 한다.</p>
+	<font>가나다라마바사 </font>
+
+	</body>
+</html>

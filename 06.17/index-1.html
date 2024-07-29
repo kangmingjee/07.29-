@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+        <!-- *inline -->
+                <a href="경로웹주소url" style="background-color: yellow;">텍스트</a>
+                <a href="www.naver.com">네이버</a>
+                <a href="www.naver.com"><img src="" alt="" srcset=""></a>
+                <a href="#">텍스트 그림</a>
+                <span>123456789</span>
+                <b>bold</b>
+                <strong>bold</strong>
+                <input type="text">
+                <input type="password">
+                <input type="checkbox">
+                <input type="radio">
+                <textarea name="" id=""></textarea>
+
+                <!-- 속성 같은 라인에 보인다 
+                    인라인과 인라인은 5px 간격이 떨어진다
+                    글씨에만 색칠해짐 ex) width ,height가 입력을 해도 안먹힘
+                    padding 위아래,margin 위아래도 안먹힘
+                    <해결은 display :block ,inline-block> 
+                    <해결은 display:block,inline-block-->
+
+                    <!-- 특징 -->
+                <!-- 
+                    *내용이 없을때: 아무것도 안보임
+
+                    *내용이 있을때: width는 부모에게 100% 상속 받아온다
+                                height는 내용 만큼만 보인다 
+                                높이는 부모에게 상속 받는게 아니라 자식의 높이를 알고간다
+                                쌓기 구조 -->
+                                <!-- **부모에게 10% width를 상속받았지만
+                                내가 width를 지정했을때 가운데 정렬하려면 magin 0 auto
+                                글자를 가운데 정렬 할수 없다 -정렬하고 싶으면 
+                                display-black  /text aline :center , text -aline :right; 
+                                
+                                *inline -block 거나 inline  부모에게 text -aline :center는 먹힌다-->
+                        
+                    <!-- inline-block -->
+                    <!-- 블럭구조의 단점 : 쌓는 구조기 때문에 옆으로 구조를 변경할때
+                        display :inline-block변경
+                        옆으로 구조 변경  -->
+        <!-- *block -->
+        <div></div>
+        <h1></h1>
+        <section></section>
+        <header></header>
+        <footer></footer>
+        <main></main>
+        <p></p>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+            <aside>
+
+            </aside>
+        <!-- *inline-block? -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+         *{margin: 0; padding: 0; box-sizing: border-box;}
+        ul,li,ol{list-style: none;}
+        body{background-color: #333;}
+        img{width: 100%;}
+
+        .wrap{width: 1000px;
+            margin: 0 auto;
+            border: 1px solid white;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           gap: 20px;}
+        /* .box{ transition:all 0.3s;}
+        .box:hover{
+            transform:scale(1.2);
+        } */
+        .box{
+            overflow: hidden;
+         }
+        .box img{ 
+            transition: all 0.3s;
+        }
+        .box:hover img{
+            transform:scale(1.2);
+        }
+            
+        
+    </style>
+</head>
+<body>
+    
+        <ul class="wrap">
+            <li class="box"><img src="img/animal01.png" alt="animal01"></li>
+            <li  class="box"><img src="img/animal02.png" alt="animal02"></li>
+            <li class="box"><img src="img/animal03.png" alt="animal03"></li>
+            <li  class="box"><img src="img/animal04.png" alt="animal04"></li>
+            <li class="box"><img src="img/animal05.png" alt="animal05"></li>
+            <li class="box"><img src="img/animal06.png" alt="animal06"></li>
+            <li class="box"><img src="img/animal07.png" alt="animal07"></li>
+            <li class="box"><img src="img/animal08.png" alt="animal08"></li>
+            <li class="box"><img src="img/animal09.png" alt="animal09"></li>
+            <li class="box"><img src="img/animal10.png" alt="animal10"></li>
+            <li class="box"><img src="img/animal11.png" alt="animal11"></li>
+            <li class="box"><img src="img/animal12.png" alt="animal12"></li>
+    </ul>
+    
+</body>
+</html>

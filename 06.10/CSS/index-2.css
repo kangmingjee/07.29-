@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*flot 구조
+부모로부터 공중으로 띄우기 (부모에게서 독립)
+float : :left,:right
+
+부모의 높이가 지정되지 않으면 ,높이가 0 설정됨
+그래서 다음구조가 따라올라온다
+해결방법 :
+ ⓐ다음구조물에 clear :both ,left right
+ ⓑ부모의 높이를 지정한다
+ ⓒ부모에게 overflow : hidden
+
+ *부모에게서 독립되면 width 못가져온다
+ 부모의 width를  버리고 옴 (내용만큼만 width잡힌다)
+
+
+ 
+
+
+
+/*reset*/
+*{margin: 0;padding: 0;}
+ul,li,ol{list-style:none ;}
+a{text-decoration: none; color: inherit;}
+
+
+
+.box1{
+    width:1000px ;/*해결방법*/
+    background-color: #ddd;
+    margin: 0 auto;
+    /*height: 100px;*/
+    /*해결방법*/
+}
+
+.box{
+    width: 200px;
+    height: 50px;
+    background-color: yellowgreen;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+}
+    
+    .list{
+        /*clear :both;*/
+        /*해결방법*/
+        width :1000px;
+        background-color: pink;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .list li{
+        float: left;
+        background-color: yellowgreen;
+        width: calc(100% /50 - 20px)
+        /*margin-right: 20px;*/
+        margin: 0 10px;
+        text-align: center;
+        line-height: 50px;
+        }
+
+    .left{
+        width: 200px;
+        height:200px;
+        background-color: tomato;
+        margin: 0 auto;
+        float: left;
+    }
+    .right{
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        margin: 0 auto;
+        float: right;
+    }

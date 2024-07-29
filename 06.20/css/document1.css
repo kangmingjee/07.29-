@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0; box-sizing: border-box;}
+li,ol,li{list-style: none;}
+a{text-decoration: none;}
+
+
+.wrap{
+    width: 800px;
+    height: 300px;
+    margin: 100px auto;
+    border: 1px solid seagreen;
+    animation: rotate ;
+}
+
+.box1{
+    width: 90px;
+    height: 100px;
+    background-color: yellow;
+    float: left;
+    
+}
+.box2{
+    width: 400px;
+    height: 100px;
+    background-color: thistle;
+    float: left;
+}

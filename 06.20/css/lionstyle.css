@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li,
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.box3{
+	width: 630px;
+	height: 507px;
+	border: 20px double red;
+	margin: 100px auto;
+	background: url(../img/lion.jpg)no-repeat center center;
+	transition: 0.5s;
+	background-size: 100%;
+	cursor: pointer;
+}
+.box3:hover{
+	width: 100%;
+	background-size: 130%;
+}
+
+.box4{
+	width: 630px;
+	height: 507px;
+	border: 20px dotted red;
+	margin: 100px auto;
+}
+
+
+.box4:hover img{
+transform: scale(1.5);
+}
+

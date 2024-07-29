@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: moving 5s infinite;
+            position: relative;
+        }
+        @keyframes moving{
+            0%{left: 0; top: 0; background-color: aqua; border-radius: 0 50% 0 0;}
+            25%{left: 500px; top: 0; background-color: blue; border-radius: 0 50% 50% 0;}
+            50%{left: 500px; top: 500px;background-color: blueviolet;border-radius: 0 50% 0 50%;}
+            75%{left: 0; top: 500px;background-color: yellow; border-radius: 50% 0 50% 0 ;}
+            100%{left: 0; top:0;background-color: thistle; border-radius: 50% 50% 50% 50%;}
+        }
+
+
+    </style>
+</head>
+<body>
+      <div class="box">45645546</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li,
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.box3{
+	width: 630px;
+	height: 507px;
+	border: 20px double red;
+	margin: 100px auto;
+	background: url(../img/lion.jpg)no-repeat center center;
+	transition: 0.5s;
+	background-size: 100%;
+	cursor: pointer;
+}
+.box3:hover{
+	background-size: 130%;
+}
+
+.box4{
+	width: 630px;
+	height: 507px;
+	border: 20px dotted red;
+	margin: 100px auto;
+	overflow: hidden;
+}
+.box4 img{
+	transition: all 1s;
+}
+
+
+.box4:hover img{
+transform: scale(1.5);
+}
+
+.text1{
+	font-size: 200%;
+	html,body
+}
+
+.text2{
+	font-size: 30px;
+	
+}
+.text3 .child_1{
+	font-size: 2em;
+	/* em : 내부모 크기의 배율 30*2=60px */
+}
+.text3 .child_2{
+	font-size: 2rem;
+	/* rem : html 크기 비율 16*2=32px; */
+	/* em : 내부모 크기의 배율 30*2=60px */
+}

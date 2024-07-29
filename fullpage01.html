@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/fullpage.js"></script>
+    <script lang="java">
+        $(document).ready(function(){
+            $(".box").fullpage({
+                navigation:true,
+                navigationPosition:"left",
+                navigationTooltips:["page1", "page2", "page3", "page4", "page5"],
+                scrollHorizontally:true
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        .section{
+            background-size: cover;
+        }
+
+        #sec0{
+            background-image: url(img/bg1.jpg);
+        }
+
+        #sec1{
+            background-image: url(img/bg2.jpg);
+        }
+
+        #sec2{
+            background-image: url(img/bg3.jpg);
+        }
+
+        #sec3{
+            background-image: url(img/bg4.jpg);
+        }
+
+        #sec4{
+            background-image: url(img/bg5.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="section" id="sec0">
+            <h1>fullpage 01</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga voluptates beatae expedita temporibus deserunt! Adipisci, incidunt enim culpa error soluta laboriosam iste neque, nobis facere modi ratione voluptatem, quod veritatis!</p>
+            <a href="#"><img src="img/animal01.png" alt="an1"></a>
+        </div>
+        <div class="section" id="sec1"><h1>fullpage 02</h1></div>
+        <div class="section" id="sec2"><h1>fullpage 03</h1></div>
+        <div class="section" id="sec3"><h1>fullpage 04</h1></div>
+        <div class="section" id="sec4"><h1>fullpage 05</h1></div>
+    </div><!-- box -->
+</body>
+
+</html>

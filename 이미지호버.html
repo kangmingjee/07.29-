@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        @font-face {
+        font-family: 'PeoplefirstFightingTTF';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-2@1.0/PeoplefirstFightingTTF.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li, ol{
+            list-style: none;
+        }
+
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        body{
+            font-family: 'PeoplefirstFightingTTF';
+            background-color: #1f2029;
+            overflow-x: hidden;
+        }
+
+        .section_main{
+            padding: 100px 0;
+            max-width: 1140px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .section_row{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .section_col{
+            flex: 0 0 50%;
+            position: relative;
+            transition: all 250ms ease;
+            cursor: pointer;
+        }
+
+        .section{
+            width: 100%;
+            padding: 20px;
+            position: relative;
+        }
+
+        .section_inner{
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .section_inner img{
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 250ms linear;
+        }
+
+        .section_col:hover .section_inner img{
+            transform: rotate(-3deg) scale(1.1);
+        }
+
+        .hover_text{
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            pointer-events: none;
+            display: flex;
+            /* display: none; */
+            align-items: center;
+            justify-content: center;
+            mix-blend-mode: difference;
+            transition: all 250ms;
+        }
+
+        .hover_text h2{
+            font-size: 8vw;
+            color: white;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 250ms ease;
+        }
+
+        .section_row:hover .section_col{
+            opacity: 0.1;
+        }
+
+        .section_row .section_col:hover{
+            opacity: 1;
+        }
+
+        .section_col:hover + .hover_text{
+            display: flex;
+        }
+
+        .section_col:hover + .hover_text h2{
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section_main">
+        <div class="section_row">
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img1.jpg" alt="img1">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Male Goofy Face</h2>
+            </div><!-- hover_text -->
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img2.jpg" alt="img2">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Toy Pig</h2>
+            </div><!-- hover_text -->
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img3.jpg" alt="img3">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Shy Portrait</h2>
+            </div><!-- hover_text -->
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img4.jpg" alt="img4">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Skateboard Face</h2>
+            </div><!-- hover_text -->
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img5.jpg" alt="img5">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Mirror Reflection</h2>
+            </div><!-- hover_text -->
+
+            <div class="section_col">
+                <div class="section">
+                    <div class="section_inner">
+                        <img src="img/img6.jpg" alt="img6">
+                    </div><!-- section_inner -->
+                </div><!-- section -->
+            </div><!-- section_col -->
+            <div class="hover_text">
+                <h2>Funny Bunny</h2>
+            </div><!-- hover_text -->
+
+        </div><!-- section_row -->
+    </div><!-- section_main -->
+</body>
+
+</html>

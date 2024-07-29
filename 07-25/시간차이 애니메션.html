@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .list{
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .list img{
+            position: absolute;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .list img.ani{opacity: 1;}
+        .list img:nth-child(1){
+            left: 200px;
+            top: 50px;
+        }
+        .list img:nth-child(2){
+            right: 200px;
+            top: 50px;
+        }
+        .list img:nth-child(3){
+            left:250px ;
+            top: 100px;
+        }
+        
+        .list img:nth-child(4){
+            right: 200px;
+            top: 50px;
+        }
+
+
+    </style>
+
+        <script src="script/jquery-3.7.1.js"></script>
+        <script lang="java">
+
+           $(function(){
+            $(".list img").each(function(i){
+
+                    setTimeout(function(){
+                        $(".list img").eq(i).addClass("ani")
+                    } , 1000*i);
+            })//each
+            $(".box li").each(function(index){
+                onsole.log("this index : " , index);
+                console.log("this text : " , $(this).text());
+            })
+
+        }) //jqend
+
+
+        </script>
+
+
+</head>
+<body>
+            <div class="list">
+                <img src="img/cha01.png" alt="cha01">
+                <img src="img/cha02.png" alt="cha02">
+                <img src="img/cha03.png" alt="cha03">
+                <img src="img/cha04.png" alt="cha04">
+            </div>
+
+        <ul class="box">
+            <li><a href="#">list01</a></li>
+            <li><a href="#">list02</a></li>
+            <li><a href="#">list03</a></li>
+            <li><a href="#">list04</a></li>
+            <li><a href="#">list05</a></li>
+        </ul>
+
+
+</body>
+</html>

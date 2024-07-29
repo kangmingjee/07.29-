@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            float: left;
+            border: 1px solid red;
+
+        }
+        #box1{
+            background-color: blueviolet;
+            animation-name: move;
+            /* 실행할 애니메이션 이름 */
+            animation-duration: 3s;
+            /* 애니메이션 실행 시간 */
+            animation-delay: 1s;
+            /* 애니메이션 기다리는 시간 */
+            /* animation-iteration-count: 3s; */
+            animation-iteration-count: infinite;
+            /* 애니메이션 실행 횟수 infinite 무한 반복 */
+            animation-timing-function: ease-in;
+            animation: move ;
+        }
+        @keyframes move{
+            0%{
+                background-color: blueviolet;
+            }
+            50%{
+                background-color: red;
+            }
+
+            100%{
+                background-color: yellow;
+            }
+        }
+
+        #box2{
+            background-color:black;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-fill-mode: backwards;
+            /* 원본으로 돌아옴 기본값 딜레이될 동안은 애니메이션 초기에서 멈춤 */
+            /* animation-fill-mode: forwards; */
+            /*애니메이션 마지막 단계에서 멎춤  */
+        }
+        #box3{
+            background-color: yellow;
+            border-radius: 50%;
+            border: 10px solid black;
+            animation: back 3s;
+            animation-duration: alternate;
+        }
+        @keyframes back{
+
+        
+        0%{ background-color: pink;
+            border-radius: 50%;
+            border: 10px solid green;
+            
+        }
+        100%{
+            background-color: hotpink;
+            border-radius: 0%;
+            border: 10px solid black;
+        }
+
+    }
+    #box4{
+        border-radius: 50%;
+        background-image:radial-gradient(at 25% 25% , white , red) ;
+        /* background-color: cornflowerblue; */
+        position: relative;
+        /* 기준 내가 있는 위치가 0,0 */
+        animation: moving 4s infinite alternate ease-in-out;
+    }
+    @keyframes moving{
+        0%{left: 0; top: 0; transform: rotate(0deg);}
+        25%{left: 500px; top: 0; transform: rotate(90deg);}
+        50%{left: 500px;top: 300px; transform: rotate(-180deg);}
+        75%{left: 0; top:300px;}
+        100%{left: 0;top: 0;}
+    }
+    #box5{
+        float: none;
+        perspective: 1000px;
+        margin: 300px;
+        animation: rotate 1s infinite,background 1s infinite alternate;
+    
+    }
+    @keyframes rotate{
+        0%{transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+        50%{transform:perspective(120px) rotateX(-180deg) rotateY(0deg);}
+        100%{transform:perspective(120px)rotateX(-180deg) rotateY(-180deg);}
+    }
+    @keyframes background{
+        0%{background: red;}
+        50%{background: green;}
+        100%{background-color: blueviolet;}
+    
+    }
+    </style>
+</head>
+<body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+</body>
+</html>

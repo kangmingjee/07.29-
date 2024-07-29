@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }   
+        .grad1{
+            background-image: linear-gradient(orange,skyblue);
+            /* 위에서 아래 방향으로 그라데이션이 나타남 */
+        }
+        .grad2{
+            background:linear-gradient(to right , blue, white);
+            background:linear-gradient(to right bottom , blue, white);
+            background:linear-gradient(to right bottom , blue, white);
+            background: -webkit-linear-gradient(15deg,blue,white);
+            background: -moz-linear-gradient(15deg ,blue,white);
+            background: -o-linear-gradient(15deg ,blue,white);
+        }
+        .grad3{
+            background:linear-gradient(to right, red,orange,green,indigo);}
+        
+        .grad4 {
+            background: linear-gradient(45deg,red 10% ,#ff0 50% ,#00f 90%);
+        }
+        .grad5{
+            background-image: repeating-linear-gradient(to right ,red 10% ,green 20% ,blue 30%);
+        } 
+        .grad6{
+            background-image: repeating-linear-gradient(to right, red 10% ,black 10%,black 20%);
+        }
+        .grad7{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(7,43,144,1) 46%, rgba(0,212,255,1) 100%);
+        }
+        
+
+    </style>
+</head>
+<body>
+     <div class="grad1"></div>
+
+     <div class="grad2"></div>
+     
+     <div class="grad3"></div>
+
+     <div class="grad4"></div>
+
+     <div class="grad5"></div>
+     <div class="grad6"></div>
+     <div class="grad7"></div>
+
+</body>
+</html>

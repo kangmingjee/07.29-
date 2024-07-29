@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+			width: 1000px;
+			margin: 20px auto;
+			border: 1px solid red;
+			height: 500px;
+			/* overflow: hidden; */
+
+		}
+		.origin{
+			width: 100px;
+			height: 100px;
+			background-color: antiquewhite;
+			/* float: left; */
+			margin: 20px;
+			transition: all 1s;
+		}
+        #trans1{}
+        #trans2{}
+        #trans3{}
+        #trans4{}
+
+        #trans5{
+            transform-origin: left bottom;
+            		/*중심축을 변경할때 사용할수있다. */
+        }
+        #trans6{}
+    
+	#trans1:hover{
+		transform: scale(3);
+		/* 가로 세로가 2배 확대 */
+	}
+	#scale2:hover{
+		transform: scaleX(2.5);
+
+	}
+	
+	#scale5:hover{
+		transform:rotate(45deg)
+     }
+
+
+    </style>
+
+</head>
+<body>
+    <body>
+        <div class="container">	
+            <div class="origin" id="trans1"> </div>
+        
+                <div class="origin"id=trans2>
+                    <img src="images/tree.jpg" alt="tree"></div>
+    
+                <div class="origin"id="trans3">
+                    <img src="images/tree.jpg" alt="tree"></div>
+
+                <div class="origin"id="trans4">
+                    <img src="images/tree.jpg" alt="tree"></div>
+
+                <div class="origin"id="trans5">
+                    <img src="images/tree.jpg" alt="tree"></div>
+
+                <div class="origin"id="trans6">
+                    <img src="images/tree.jpg" alt="tree"></div>
+
+                <div class="origin"id="trans7">
+                    <img src="images/tree.jpg" alt="tree"></div>
+
+                <div class="origin"id="trans8">
+                    <img src="images/tree.jpg" alt="tree"></div>
+    
+</body>
+</html>

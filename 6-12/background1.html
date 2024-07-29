@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box1{
+            width: 1000px;
+            height: 3000px;
+            background-image: url('img/dog.jpg');
+            /*background-repeat: repeat; 기본*/
+            background-repeat: repeat;
+            background-position:center ;
+            background-size: contain;
+            background-attachment: fixed;
+            /* background-size:cover 빈공간이 보이지 x; */
+            /* background-size:contain 빈공간이 보이지 x */
+            /* background-size: 1000px 300px; */
+            /* background-position:100px 100px; */
+            /* background-position: 50% 50%; */
+            background-position: -50% -50%;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            border: 5px solid red;
+        }
+
+        .box2{
+            width: 1000px;
+            height: 500px;
+            background: #ff00ff url(img/dog3.jpg)no-repeat center fixed;
+            background-size: contain;
+        }
+
+        .box3{
+            width: 300px;
+            height: 300px;
+            margin: 100px;
+            background-color: aqua;
+            padding: 30px;
+            background-clip: border-box;
+            background-clip: padding-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
